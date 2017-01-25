@@ -1,0 +1,26 @@
+<% wrap_layout :site_layout do %>
+
+	<nav id="header">
+		<div class="flexcontainer topbar">
+			<div id="logo" class="col-6">
+				<div class="padded-lr">
+					<a href="index.html"><img src="images/logo_framework.png"></a>
+				</div>
+			</div>
+			<div id="nav-primary" class="col-6">
+				<div class="padded-lr">
+					<ul>
+						<li><a href="multiple.html">multiple</a></li>
+						<li><a href="subnav.html">subnav</a></li>
+						<li><a href="single.html">single</a></li>
+						<li><a href="side.html">side</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div id="underheader"></div>
+
+<%= yield %>
+<% end %>
