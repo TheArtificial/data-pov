@@ -17,3 +17,197 @@
 @import "_site-packery";
 @import "_site-carousel";
 //@import "_site-form";
+
+/*TYPOGRAPHY*/
+
+
+.center {
+	text-align: center;
+}
+
+.description {
+	margin: 30px 0 10px;
+}
+
+a:hover {
+	color: $grape;
+}
+
+/*LAYOUT*/
+
+#logo {
+	padding-top: 10px;
+}
+
+#header{
+	.topbar {
+		border-top-color: $darkest-grape;
+		border-bottom-color: transparent;
+	}
+}
+
+#home{    /*HOMEPAGE ONLY*/
+	background-color: $darkest-grape;
+
+#header {
+	background-color: $darkest-grape;
+
+#nav-primary {
+	ul {
+		li {
+		  a {
+			  color: $white;
+				}
+		}
+	}
+}
+
+.topbar {
+	border-top-color: $white;
+	border-bottom-color: transparent;
+}
+
+a {
+	color: $white;
+}
+}
+
+.question {
+	color: $white;
+	margin-top: 20vh;
+}
+
+/*TAGS*/
+
+.tagcontainer {
+	margin: 60px 0 200px 0;
+}
+
+.tag{
+	color: $darkest-grape;
+	background-color: $white;
+	padding:10px 30px 10px 30px;
+	margin: 8px 4px 8px 4px;
+	border-radius: 50px;
+	display: inline-block;
+}
+
+.tag:hover {
+	color: $white;
+  background-color: $warm-grey-40
+}
+}    /*END HOMEPAGE ONLY*/
+
+
+#admin{    /*ADMIN ONLY*/
+	background-color: $warm-grey-10;
+
+#header {
+	background-color: $warm-grey-80;
+
+
+#nav-primary {
+	ul {
+		li {
+		  a {
+			  color: $white;
+				}
+		}
+	}
+}
+
+.topbar {
+	border-top-color: $white;
+	border-bottom-color: transparent;
+}
+
+a {
+	color: $white;
+}
+}
+
+.card {
+	background-color: $white;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+/*TAGS*/
+
+.tagcontainer {
+	margin: 60px 0 200px 0;
+}
+
+.tag{
+	color: $darkest-grape;
+	background-color: $white;
+	padding:10px 30px 10px 30px;
+	margin: 8px 4px 8px 4px;
+	border-radius: 50px;
+	display: inline-block;
+}
+
+.tag:hover {
+	color: $white;
+  background-color: $warm-grey-40;
+}
+}    /*END ADMIN ONLY*/
+
+.card {
+	background-color: $warm-grey-10;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.cardsm {
+	background-color: $white;
+	border-radius: 10px;
+	padding: 30px;
+	margin-top: 60px;
+}
+
+.tagcontainer {
+	margin: 10px 0 60px 0;
+}
+
+.tagsm {
+	font-size: .75em;
+	color: $white;
+	background-color: $turquoise;
+	padding:5px 10px 5px 10px;
+	margin: 4px 0 4px 0;
+	border-radius: 50px;
+	display: inline-block;
+}
+
+.tagsm:hover {
+	color: $white;
+  background-color: $warm-grey-40;
+}
+
+.tagsmdeselected {
+	background-color: $warm-grey-20;
+}
+
+.viztop {
+	padding-top: 60px;
+}
+
+.btn {
+	color: $white;
+	background-color: $dark-grape;
+	padding:10px 30px 10px 30px;
+	margin-bottom: 30px;
+	border-radius: 50px;
+	display: inline-block;
+}
+
+.btn:hover {
+	background-color: $darkest-grape;
+	color: $white;
+}
+
+.charttypes{
+	padding: 60px 0 100px
+}
+
