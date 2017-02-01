@@ -74,13 +74,13 @@ a {
 
 .question {
 	color: $white;
-	margin-top: 20vh;
+	margin-top: 15vh;
 }
 
 /*TAGS*/
 
 .tagcontainer {
-	margin: 60px 0 200px 0;
+	margin: 40px 0 200px 0;
 }
 
 .tag{
@@ -167,7 +167,7 @@ a {
 }
 
 .tagcontainer {
-	margin: 10px 0 60px 0;
+	margin: 5px 0 60px 0;
 }
 
 .tagsm {
@@ -193,6 +193,13 @@ a {
 	padding-top: 60px;
 }
 
+.icon {
+	top: -10px;
+	display: inline-block;
+	width: 18px;
+
+}
+
 .btn {
 	color: $white;
 	background-color: $dark-grape;
@@ -201,6 +208,16 @@ a {
 	border-radius: 50px;
 	display: inline-block;
 }
+
+.checkbox {
+	height: 15px;
+	width: 15px;
+	border-radius: 4px;
+	background-color: $warm-grey-10;
+	display: inline-block;
+	margin-right: 10px;
+}
+
 
 .btn:hover {
 	background-color: $darkest-grape;
