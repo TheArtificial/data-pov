@@ -18,6 +18,13 @@
 @import "_site-carousel";
 //@import "_site-form";
 
+#admin {
+	margin-top: 30px;
+}
+
+#content {
+	margin-top: 30px;
+}
 /*TYPOGRAPHY*/
 
 
@@ -31,6 +38,20 @@
 
 a:hover {
 	color: $grape;
+}
+
+p {
+	font-size: 1.3em;
+	line-height: 1.6em;
+	font-weight: 300;
+}
+
+h6 {
+	font-size: 1em;
+	line-height: 1.4em;
+	font-weight: 300;
+	margin: 0;
+
 }
 
 /*LAYOUT*/
@@ -173,7 +194,7 @@ a {
 .tagsm {
 	font-size: .75em;
 	color: $white;
-	background-color: $turquoise;
+	background-color: $warm-grey-40;
 	padding:5px 10px 5px 10px;
 	margin: 4px 0 4px 0;
 	border-radius: 50px;
@@ -182,11 +203,7 @@ a {
 
 .tagsm:hover {
 	color: $white;
-  background-color: $warm-grey-40;
-}
-
-.tagsmdeselected {
-	background-color: $warm-grey-20;
+  background-color: $warm-grey-60;
 }
 
 .viztop {
@@ -194,11 +211,24 @@ a {
 }
 
 .icon {
-	top: -10px;
+	top: -5px;
+	left: 5px;
 	display: inline-block;
 	width: 18px;
-
+	position: relative;
 }
+
+.arrows {
+	top: 0px;
+	display: inline-block;
+	width: 42px;
+	position: relative;
+}
+
+.right {
+	text-align: right;
+}
+
 
 .btn {
 	color: $white;
@@ -207,6 +237,22 @@ a {
 	margin-bottom: 30px;
 	border-radius: 50px;
 	display: inline-block;
+	width: 200px;
+
+}
+
+.btnmain {
+	color: $white;
+	background-color: $turquoise;
+	padding:10px 30px 10px 30px;
+	margin: 15px;
+	border-radius: 50px;
+	width: 200px;
+	display: inline-block;
+}
+
+.space {
+	margin-right: 20px;
 }
 
 .checkbox {
@@ -224,7 +270,63 @@ a {
 	color: $white;
 }
 
-.charttypes{
-	padding: 60px 0 100px
+.tagsmselected {
+	background-color: $dark-grape;
+}
+
+.tagsmselected:hover {
+	background-color: $darkest-grape;
+}
+
+.savebar {
+	height: 60px;
+	background-color: $white;
+	margin-top: -20px;
+}
+
+/* Radio group */
+.segmented {
+    display:flex;
+    flex-flow:row wrap;
+    box-sizing:border-box;
+    text-align:center;
+}
+.segmented label {
+    display:block;
+    flex:1;
+    box-sizing:border-box;
+    border:1px solid $darkest-grape;
+    border-right:none;
+    color:$darkest-grape;
+    margin:0;
+    padding:.4em;
+    user-select:none;
+    -webkit-user-select:none;
+}
+.segmented label.checked {
+    background:$darkest-grape;
+    color:#fff;
+}
+.segmented.inverted label {
+    border-color:#fff;
+    color:#fff;
+    background:none;
+}
+.segmented.inverted label.checked {
+    background:#fff;
+    color:inherit;
+}
+.segmented label:first-child {
+    border-radius:.4em 0 0 .4em;
+    border-right:0;
+}
+.segmented label:last-child {
+    border-radius:0 .4em .4em 0;
+}
+.segmented input[type="radio"] {
+    appearance:none;
+    -webkit-appearance:none;
+    margin:0;
+    position: absolute;
 }
 

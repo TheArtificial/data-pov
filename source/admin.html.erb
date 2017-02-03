@@ -2,12 +2,21 @@
 layout: multiple_layout
 ---
 <body id="admin">
-
-<!-- page content -->
-<section>
 		
-<!-- intro -->
-<div class="flexcontainer charttypes">
+<!-- content -->
+<div class="flexcontainer">
+
+<div class="col-12">
+	<div class="padded">
+
+  <div class="segmented">
+    <label><input type="radio" name="segmented"/> Sort by functions</label>
+    <label class="checked"><input type="radio" name="segmented" checked /> Sort by chart type</label>
+
+  </div>
+
+	</div>
+</div>
 
 <div class="col-12">
 	<div class="packery">
@@ -110,7 +119,21 @@ layout: multiple_layout
 </div>
 
 </div>
-</section>
 </body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".segmented label input[type=radio]").each(function(){
+        $(this).on("change", function(){
+            if($(this).is(":checked")){
+               $(this).parent().siblings().each(function(){
+                    $(this).removeClass("checked");
+                });
+                $(this).parent().addClass("checked");
+            }
+        });
+    });
+});
+</script>
 
 
