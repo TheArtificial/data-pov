@@ -151,6 +151,7 @@ a {
 	background-color: $white;
 	border-radius: 10px;
 	padding: 30px;
+
 }
 
 /*TAGS*/
@@ -175,16 +176,21 @@ a {
 }    /*END ADMIN ONLY*/
 
 .card {
-	background-color: $warm-grey-10;
+	background: rgba($warm-grey-10, 0.6);
 	border-radius: 10px;
-	padding: 30px;
+	opacity: 50%;
 }
 
 .cardsm {
 	background-color: $white;
 	border-radius: 10px;
 	padding: 30px;
-	margin-top: 60px;
+	margin-top: 30px;
+}
+
+.text{
+	background-color: $warm-grey-10; 
+	padding: 30px;
 }
 
 .tagcontainer {
@@ -349,12 +355,17 @@ a {
   opacity: 1;
 }
 
+.iconlrg {
+	width: 60px;
+	padding-bottom: 14px;
+}
+
 .popup {
   margin: 30vh auto;
   padding: 40px;
   background: #fff;
   border-radius: 10px;
-  width: 40%;
+  width: 45%;
   color: #000000;
   position: relative;
   transition: all 5s ease-in-out;
