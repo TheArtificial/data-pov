@@ -229,6 +229,11 @@ h6 {
 	position: relative;
 }
 
+.iconlrg {
+	width: 60px;
+	padding-bottom: 14px;
+}
+
 .arrows {
 	top: 0px;
 	display: inline-block;
@@ -245,7 +250,7 @@ h6 {
 	color: $white;
 	background-color: $dark-grape;
 	padding:10px 30px 10px 30px;
-	margin-bottom: 30px;
+	margin: 20px 5px 20px 5px;
 	border-radius: 50px;
 	display: inline-block;
 	width: 200px;
@@ -262,9 +267,6 @@ h6 {
 	display: inline-block;
 }
 
-.space {
-	margin-right: 20px;
-}
 
 .checkbox {
 	height: 15px;
@@ -292,6 +294,10 @@ h6 {
 	height: 60px;
 	background-color: $white;
 	margin-top: -20px;
+}
+
+.fixed{
+	position: fixed;
 }
 
 /*--------------SEGMENTED CONTROL--------------*/
@@ -406,7 +412,7 @@ xpopup
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(94, 110, 141, 0.9);
+  background-color: rgba(62, 7, 75, 0.7);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
@@ -425,11 +431,11 @@ xpopup
   position: relative;
   color: $warm-grey-80;
   width: 90%;
-  max-width: 400px;
+  max-width: 750px;
   margin: 4em auto;
-  background: #FFF;
-  border-radius: .25em .25em .4em .4em;
-  text-align: center;
+  padding:30px 60px 30px 60px;
+  background: $white;
+  border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-40px);
   -moz-transform: translateY(-40px);
