@@ -18,6 +18,8 @@
 @import "_site-carousel";
 //@import "_site-form";
 
+/*--------------SECTIONS--------------*/
+
 #admin {
 	margin-top: 30px;
 }
@@ -25,8 +27,8 @@
 #content {
 	margin-top: 30px;
 }
-/*TYPOGRAPHY*/
 
+/*--------------TYPOGRAPHY--------------*/
 
 .center {
 	text-align: center;
@@ -36,14 +38,14 @@
 	margin: 30px 0 10px;
 }
 
-a:hover {
-	color: $grape;
-}
-
 p {
 	font-size: 1.3em;
 	line-height: 1.6em;
 	font-weight: 300;
+}
+
+a:hover {
+	color: $grape;
 }
 
 h6 {
@@ -51,129 +53,132 @@ h6 {
 	line-height: 1.4em;
 	font-weight: 300;
 	margin: 0;
-
 }
 
-/*LAYOUT*/
+/*--------------LAYOUT--------------*/
 
 #logo {
 	padding-top: 10px;
 }
 
-#header{
+#header {
 	.topbar {
 		border-top-color: $darkest-grape;
 		border-bottom-color: transparent;
 	}
 }
 
-#home{    /*HOMEPAGE ONLY*/
+/*--------------INDEX ONLY--------------*/
+
+#home {    
 	background-color: $darkest-grape;
 
-#header {
-	background-color: $darkest-grape;
+	#header {
+		background-color: $darkest-grape;
 
-#nav-primary {
-	ul {
-		li {
-		  a {
-			  color: $white;
+		#nav-primary {
+			ul {
+				li {
+				  a {
+					  color: $white;
+					}
 				}
+			}
 		}
+
+	.topbar {
+		border-top-color: $white;
+		border-bottom-color: transparent;
 	}
-}
 
-.topbar {
-	border-top-color: $white;
-	border-bottom-color: transparent;
-}
+	a {
+		color: $white;
+	}
+	}
 
-a {
-	color: $white;
-}
-}
+	.question {
+		color: $white;
+		margin-top: 15vh;
+	}
 
-.question {
-	color: $white;
-	margin-top: 15vh;
-}
+/*index tags*/
 
-/*TAGS*/
+	.tagcontainer {
+		margin: 40px 0 200px 0;
+	}
 
-.tagcontainer {
-	margin: 40px 0 200px 0;
-}
+	.tag {
+		color: $darkest-grape;
+		background-color: $white;
+		padding:10px 30px 10px 30px;
+		margin: 8px 4px 8px 4px;
+		border-radius: 50px;
+		display: inline-block;
+	}
 
-.tag{
-	color: $darkest-grape;
-	background-color: $white;
-	padding:10px 30px 10px 30px;
-	margin: 8px 4px 8px 4px;
-	border-radius: 50px;
-	display: inline-block;
-}
-
-.tag:hover {
-	color: $white;
-  background-color: $warm-grey-40
-}
-}    /*END HOMEPAGE ONLY*/
+	.tag:hover {
+		color: $white;
+	  background-color: $warm-grey-40
+	}
+}    /*END INDEX ONLY*/
 
 
-#admin{    /*ADMIN ONLY*/
+/*--------------ADMIN ONLY--------------*/
+
+#admin {    
 	background-color: $warm-grey-10;
 
-#header {
-	background-color: $warm-grey-80;
+	#header {
+		background-color: $warm-grey-80;
 
-
-#nav-primary {
-	ul {
-		li {
-		  a {
-			  color: $white;
+		#nav-primary {
+			ul {
+				li {
+				  a {
+					  color: $white;
+					}
 				}
+			}
+		}
+
+		.topbar {
+			border-top-color: $white;
+			border-bottom-color: transparent;
+		}
+
+		a {
+			color: $white;
 		}
 	}
-}
 
-.topbar {
-	border-top-color: $white;
-	border-bottom-color: transparent;
-}
+	.card {
+		background-color: $white;
+		border-radius: 10px;
+		padding: 30px;
+	}
 
-a {
-	color: $white;
-}
-}
+	/*TAGS*/
 
-.card {
-	background-color: $white;
-	border-radius: 10px;
-	padding: 30px;
+	.tagcontainer {
+		margin: 60px 0 200px 0;
+	}
 
-}
+	.tag {
+		color: $darkest-grape;
+		background-color: $white;
+		padding:10px 30px 10px 30px;
+		margin: 8px 4px 8px 4px;
+		border-radius: 50px;
+		display: inline-block;
+	}
 
-/*TAGS*/
-
-.tagcontainer {
-	margin: 60px 0 200px 0;
-}
-
-.tag{
-	color: $darkest-grape;
-	background-color: $white;
-	padding:10px 30px 10px 30px;
-	margin: 8px 4px 8px 4px;
-	border-radius: 50px;
-	display: inline-block;
-}
-
-.tag:hover {
-	color: $white;
-  background-color: $warm-grey-40;
-}
+	.tag:hover {
+		color: $white;
+	  background-color: $warm-grey-40;
+	}
 }    /*END ADMIN ONLY*/
+
+/*--------------RESULTS--------------*/
 
 .card {
 	background: rgba($warm-grey-10, 0.6);
@@ -188,7 +193,7 @@ a {
 	margin-top: 30px;
 }
 
-.text{
+.text {
 	background-color: $warm-grey-10; 
 	padding: 30px;
 }
@@ -270,7 +275,6 @@ a {
 	margin-right: 10px;
 }
 
-
 .btn:hover {
 	background-color: $darkest-grape;
 	color: $white;
@@ -290,54 +294,7 @@ a {
 	margin-top: -20px;
 }
 
-/* Radio group */
-.segmented {
-    display:flex;
-    flex-flow:row wrap;
-    box-sizing:border-box;
-    text-align:center;
-}
-.segmented label {
-    display:block;
-    flex:1;
-    box-sizing:border-box;
-    border:1px solid $darkest-grape;
-    border-right:none;
-    color:$darkest-grape;
-    margin:0;
-    padding:.4em;
-    user-select:none;
-    -webkit-user-select:none;
-}
-.segmented label.checked {
-    background:$darkest-grape;
-    color:#fff;
-}
-.segmented.inverted label {
-    border-color:#fff;
-    color:#fff;
-    background:none;
-}
-.segmented.inverted label.checked {
-    background:#fff;
-    color:inherit;
-}
-.segmented label:first-child {
-    border-radius:.4em 0 0 .4em;
-    border-right:0;
-}
-.segmented label:last-child {
-    border-radius:0 .4em .4em 0;
-}
-.segmented input[type="radio"] {
-    appearance:none;
-    -webkit-appearance:none;
-    margin:0;
-    position: absolute;
-}
-
-
-/*OVERLAY*/
+/*--------------OVERLAY--------------*/
 
 .overlay {
   position: fixed;
@@ -350,6 +307,7 @@ a {
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -384,3 +342,60 @@ a {
     width: 70%;
   }
 }
+
+/*--------------SEGMENTED CONTROL--------------*/
+
+.segmented {
+    display:flex;
+    flex-flow:row wrap;
+    box-sizing:border-box;
+    text-align:center;
+}
+
+.segmented label {
+    display:block;
+    flex:1;
+    box-sizing:border-box;
+    border:1px solid $darkest-grape;
+    border-right:none;
+    color:$darkest-grape;
+    margin:0;
+    padding:.4em;
+    user-select:none;
+    -webkit-user-select:none;
+}
+
+.segmented label.checked {
+    background:$darkest-grape;
+    color:#fff;
+}
+
+.segmented.inverted label {
+    border-color:#fff;
+    color:#fff;
+    background:none;
+}
+
+.segmented.inverted label.checked {
+    background:#fff;
+    color:inherit;
+}
+
+.segmented label:first-child {
+    border-radius:.4em 0 0 .4em;
+    border-right:0;
+}
+
+.segmented label:last-child {
+    border-radius:0 .4em .4em 0;
+}
+
+.segmented input[type="radio"] {
+    appearance:none;
+    -webkit-appearance:none;
+    margin:0;
+    position: absolute;
+}
+
+
+
