@@ -1,30 +1,69 @@
 <% wrap_layout :site_layout do %>
 
-<%
-    def get_nav_svg(name)
-      path = "images/img_nav-#{name}.svg"
-      if resource = sitemap.find_resource_by_path(path)
-        file = File.open(resource.source_file, 'r')
-        return file.read
-      else
-        return '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 32 32" xml:space="preserve"><rect x="0" y="0" height="32" width="32" rx="6" ry="6" fill="#19150D"></rect></svg>'
-      end
-    end
-%>
+	<nav id="header">
+		<div class="flexcontainer topbar">
+			<div id="logo" class="col-6">
+				<div class="padded-lr">
+					<a href="index.html"><h1>Data @ The Artificial</h1></a>
+				</div>
+			</div>
+			<div id="nav-primary" class="col-6">
+				<div class="padded-lr">
+					<ul>
+						<li><a href="admin.html">ADMIN</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
 
 	<section id="header-side">
-		<div class="flexcontainer topbar"></div>
 		<div class="flexcontainer">
-			<div class="col-1 right-11">
-				<nav id="nav-primary" class="iconlist">
-					<div class="padded">
-						<ul>
-							<li data-anchor-target="#one"><a href="#one"><%= get_nav_svg('explore') %></a></li>
-							<li data-anchor-target="#two"><a href="#two"><%= get_nav_svg('generate') %></a></li>
-							<li data-anchor-target="#three"><a href="#three"><%= get_nav_svg('refine') %></a></li>
-							<li data-anchor-target="#four"><a href="#four"><%= get_nav_svg('reflect') %></a></li>
-						</ul>
+			<div class="col-1 left-8">
+				<nav id="nav-primary">
+					<div class="col-4">
+				<div class="padded">
+					<h4>My primary function</h4>
+					<div id="tagcontainer">
+						<h2>Range <a href="index.html"><img class="icon" src="images/temp_close.png"></a></h2>
+						<div>
+							<div class="tagcontainer">
+								<div class="checkbox"></div>Multiple categories<br>
+								<br>
+								<div class="checkbox"></div>Compare to average
+							</div>
+							<h4>Other functions</h4>
+							<div class="tagcontainer">
+								<a class="tag" href="">Hierarchy</a> 
+								<a class="tag selected" href="">Range</a>
+								<a class="tag" href="">Cycles</a> 
+								<a class="tag" href="">Flow</a> 
+								<a class="tag" href="">Continuous intervals</a> 
+								<a class="tag" href="">Aggregations</a> 
+								<a class="tag disabled" href="">Deviation from normal</a> 
+								<a class="tag" href="">Proportions</a> 
+								<a class="tag" href="">Pattern</a> 
+								<a class="tag disabled" href="">Location</a> 
+								<a class="tag" href="">Change over time</a>
+							</div>
+							<h4>Chart type</h4>
+							<div class="tagcontainer">
+								<a class="tag" href="changeovertime.html">Bar charts</a> 
+								<a class="tag" href="">Histograms</a> 
+								<a class="tag" href="">Range charts</a> 
+								<a class="tag disabled" href="">Line charts</a> 
+								<a class="tag" href="">Area charts</a> 
+								<a class="tag disabled" href="">Scatter plots</a> 
+								<a class="tag disabled" href="">Radial charts</a> 
+								<a class="tag disabled" href="">Composition</a> 
+								<a class="tag" href="">Calendars</a> 
+								<a class="tag disabled" href="">Geographical maps</a> 
+								<a class="tag" href="">Networks</a>
+							</div>
+						</div>
 					</div>
+				</div>
+			</div>
 				</nav>
 			</div>
 		</div>
