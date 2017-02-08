@@ -15,24 +15,20 @@ layout: multiple_layout
 					<div class="cd-popup" id="proportions">
 						<div class="cd-popup-container">
 							<h2>Proportions</h2>
-							<p>Coming soon</p><br>
+							<p>Is it true that your data has a whole value and the division of that is the most meaningful? In some cases, the whole value may be the span of data shown.</p><br>
 							<p><strong>Commonly used for</strong></p><br>
-							<div class="flexcontainer col-9">
+							<div class="flexcontainer col-6">
 								<div class="col-3">
-									<img class="iconlrg" src="images/xx.png"><br>
-									<p>Label</p>
+									<img class="iconlrg" src="images/temp_time.png"><br>
+									<p>Distribution of time</p>
 								</div>
 								<div class="col-3">
-									<img class="iconlrg" src="images/xx.png"><br>
-									<p>Label</p>
-								</div>
-								<div class="col-3">
-									<img class="iconlrg" src="images/xx.png"><br>
-									<p>Labels</p>
+									<img class="iconlrg" src="images/temp_price.png"><br>
+									<p>Finanaces</p>
 								</div>
 							</div>
-							<a class="btn" href="">No, let me select again</a>
-							<a class="btn" href="Proportions.html">Yes, continue</a>
+							<a class="btn cd-popup-close">No, select another</a>
+							<a class="btn" href="proportions.html">Yes, continue</a>
 						</div> <!-- cd-popup-container -->
 					</div> <!-- cd-popup -->
 				<a class="tag" id="aggregations-tag">Aggregations</a> 
@@ -55,7 +51,7 @@ layout: multiple_layout
 									<p>Labels</p>
 								</div>
 							</div>
-							<a class="btn" href="">No, let me select again</a>
+							<a class="btn cd-popup-close">No, select another</a>
 							<a class="btn" href="Aggregations.html">Yes, continue</a>
 						</div> <!-- cd-popup-container -->
 					</div> <!-- cd-popup -->
@@ -79,7 +75,7 @@ layout: multiple_layout
 									<p>Price ranges</p>
 								</div>
 							</div>
-							<a class="btn" href="">No, let me select again</a>
+							<a class="btn cd-popup-close">No, select another</a>
 							<a class="btn" href="range.html">Yes, continue</a>
 						</div> <!-- cd-popup-container -->
 					</div> <!-- cd-popup -->
@@ -103,7 +99,7 @@ layout: multiple_layout
 									<p>Labels</p>
 								</div>
 							</div>
-							<a class="btn" href="">No, let me select again</a>
+							<a class="btn cd-popup-close">No, select another</a>
 							<a class="btn" href="Cycles.html">Yes, continue</a>
 						</div> <!-- cd-popup-container -->
 					</div> <!-- cd-popup -->
@@ -127,7 +123,7 @@ layout: multiple_layout
 									<p>Labels</p>
 								</div>
 							</div>
-							<a class="btn" href="">No, let me select again</a>
+							<a class="btn cd-popup-close">No, select another</a>
 							<a class="btn" href="hierarchy.html">Yes, continue</a>
 						</div> <!-- cd-popup-container -->
 					</div> <!-- cd-popup -->
@@ -151,7 +147,7 @@ layout: multiple_layout
 									<p>Labels</p>
 								</div>
 							</div>
-							<a class="btn" href="">No, let me select again</a>
+							<a class="btn cd-popup-close">No, select another</a>
 							<a class="btn" href="Continuousintervals.html">Yes, continue</a>
 						</div> <!-- cd-popup-container -->
 					</div> <!-- cd-popup -->
@@ -175,7 +171,7 @@ layout: multiple_layout
 									<p>Labels</p>
 								</div>
 							</div>
-							<a class="btn" href="">No, let me select again</a>
+							<a class="btn cd-popup-close">No, select another</a>
 							<a class="btn" href="Flow.html">Yes, continue</a>
 						</div> <!-- cd-popup-container -->
 					</div> <!-- cd-popup --> 
@@ -199,7 +195,7 @@ layout: multiple_layout
 									<p>Labels</p>
 								</div>
 							</div>
-							<a class="btn" href="">No, let me select again</a>
+							<a class="btn cd-popup-close">No, select another</a>
 							<a class="btn" href="deviationfromnormal.html">Yes, continue</a>
 						</div> <!-- cd-popup-container -->
 					</div> <!-- cd-popup -->				
@@ -223,7 +219,7 @@ layout: multiple_layout
 									<p>Labels</p>
 								</div>
 							</div>
-							<a class="btn" href="">No, let me select again</a>
+							<a class="btn cd-popup-close">No, select another</a>
 							<a class="btn" href="Location.html">Yes, continue</a>
 						</div> <!-- cd-popup-container -->
 					</div> <!-- cd-popup -->
@@ -247,7 +243,7 @@ layout: multiple_layout
 								<p>Labels</p>
 							</div>
 						</div>
-						<a class="btn" href="">No, let me select again</a>
+						<a class="btn cd-popup-close">No, select another</a>
 						<a class="btn" href="Pattern.html">Yes, continue</a>
 					</div> <!-- cd-popup-container -->
 				</div> <!-- cd-popup -->
@@ -271,7 +267,7 @@ layout: multiple_layout
 									<p>Labels</p>
 								</div>
 							</div>
-							<a class="btn" href="">No, let me select again</a>
+							<a class="btn cd-popup-close">No, select another</a>
 							<a class="btn" href="changeovertime.html">Yes, continue</a>
 						</div> <!-- cd-popup-container -->
 					</div> <!-- cd-popup -->
@@ -279,69 +275,67 @@ layout: multiple_layout
 		</div>
 	</div>
 
-<script type="text/javascript">
-	jQuery(document).ready(function($){
-	//open popup
-	$('#proportions-tag').on('click', function(event){
-		event.preventDefault();
-		$('#proportions').addClass('is-visible');
-	});
-	$('#aggregations-tag').on('click', function(event){
-		event.preventDefault();
-		$('#aggregations').addClass('is-visible');
-	});
-	$('#range-tag').on('click', function(event){
-		event.preventDefault();
-		$('#range').addClass('is-visible');
-	});
-	$('#cycles-tag').on('click', function(event){
-		event.preventDefault();
-		$('#cycles').addClass('is-visible');
-	});
-	$('#hierarchy-tag').on('click', function(event){
-		event.preventDefault();
-		$('#hierarchy').addClass('is-visible');
-	});
-	$('#continuousintervals-tag').on('click', function(event){
-		event.preventDefault();
-		$('#continuousintervals').addClass('is-visible');
-	});
-	$('#flow-tag').on('click', function(event){
-		event.preventDefault();
-		$('#flow').addClass('is-visible');
-	});
-	$('#deviationfromnormal-tag').on('click', function(event){
-		event.preventDefault();
-		$('#deviationfromnormal').addClass('is-visible');
-	});
-	$('#location-tag').on('click', function(event){
-		event.preventDefault();
-		$('#location').addClass('is-visible');
-	});
-	$('#pattern-tag').on('click', function(event){
-		event.preventDefault();
-		$('#pattern').addClass('is-visible');
-	});
-	$('#changeovertime-tag').on('click', function(event){
-		event.preventDefault();
-		$('#changeovertime').addClass('is-visible');
-	});
-
-
-	
-	//close popup
-	$('.cd-popup').on('click', function(event){
-		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+		//open popup
+		$('#proportions-tag').on('click', function(event){
 			event.preventDefault();
-			$('.cd-popup').removeClass('is-visible');
-		}
+			$('#proportions').addClass('is-visible');
+		});
+		$('#aggregations-tag').on('click', function(event){
+			event.preventDefault();
+			$('#aggregations').addClass('is-visible');
+		});
+		$('#range-tag').on('click', function(event){
+			event.preventDefault();
+			$('#range').addClass('is-visible');
+		});
+		$('#cycles-tag').on('click', function(event){
+			event.preventDefault();
+			$('#cycles').addClass('is-visible');
+		});
+		$('#hierarchy-tag').on('click', function(event){
+			event.preventDefault();
+			$('#hierarchy').addClass('is-visible');
+		});
+		$('#continuousintervals-tag').on('click', function(event){
+			event.preventDefault();
+			$('#continuousintervals').addClass('is-visible');
+		});
+		$('#flow-tag').on('click', function(event){
+			event.preventDefault();
+			$('#flow').addClass('is-visible');
+		});
+		$('#deviationfromnormal-tag').on('click', function(event){
+			event.preventDefault();
+			$('#deviationfromnormal').addClass('is-visible');
+		});
+		$('#location-tag').on('click', function(event){
+			event.preventDefault();
+			$('#location').addClass('is-visible');
+		});
+		$('#pattern-tag').on('click', function(event){
+			event.preventDefault();
+			$('#pattern').addClass('is-visible');
+		});
+		$('#changeovertime-tag').on('click', function(event){
+			event.preventDefault();
+			$('#changeovertime').addClass('is-visible');
+		});
+
+		//close popup
+		$('.cd-popup').on('click', function(event){
+			if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+				event.preventDefault();
+				$('.cd-popup').removeClass('is-visible');
+			}
+		});
+		//close popup when clicking the esc keyboard button
+		$(document).keyup(function(event){
+	    	if(event.which=='27'){
+	    		$('.cd-popup').removeClass('is-visible');
+		    }
+	    });
 	});
-	//close popup when clicking the esc keyboard button
-	$(document).keyup(function(event){
-    	if(event.which=='27'){
-    		$('.cd-popup').removeClass('is-visible');
-	    }
-    });
-});
-</script>
+	</script>
 </body>
