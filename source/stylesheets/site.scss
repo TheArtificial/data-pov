@@ -19,20 +19,38 @@
 //@import "_site-form";
 
 
+// for mobile
+@media only screen and (min-device-width: 320px) {
+
+}
+
+// for tablet
+@media only screen and (min-device-width: 768px) {
+}
+
+// for desktop
+@media (min-width: 960px) {
+}
 
 /*--------------SECTIONS--------------*/
-
 #admin {
-	padding-top: 100px;
-}
+		padding-top: 10px;
+	}
 
 #content {
-	padding-top: 120px;
 	background-color: rgba($warm-grey-10, 0.35);
+	padding-top: 10px;
 }
 
-#header-side {
-	margin-top: 120px;
+// for desktop
+@media (min-width: 960px) {
+	#admin {
+		padding-top: 60px;
+	}
+
+	#content {
+		padding-top: 60px;
+	}
 }
 
 /*--------------TYPOGRAPHY--------------*/
@@ -50,8 +68,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
 }
 
 p {
-	font-size: 1.3em;
-	line-height: 1.6em;
+	font-size: 1em;
+	line-height: 1.2em;
 	font-weight: 300;
 }
 
@@ -61,6 +79,10 @@ a {
 
 h1 {
 	font-size: 1.2em;
+}
+
+h2 {
+	font-size: 2.2em;
 }
 
 h3 {
@@ -73,6 +95,15 @@ h6 {
 	font-weight: 300;
 	margin: 0;
 }
+
+// for desktop
+@media (min-width: 960px) {
+	p {
+	font-size: 1.3em;
+	line-height: 1.6em;
+	}
+}
+
 
 /*--------------LAYOUT--------------*/
 
@@ -107,6 +138,28 @@ h6 {
 
 	.flexcontainer {
 		border-top-color: transparent;
+	}
+}
+
+.sidenav {
+	display: none;
+}
+
+.mobiletitle {
+	display: inline-block;
+	padding-top: 0;
+
+}
+
+
+// for desktop
+@media (min-width: 960px) {
+	.sidenav {
+		display: initial;
+	}
+
+	.mobiletitle {
+		display: none;
 	}
 }
 
@@ -193,9 +246,8 @@ h6 {
 .cd-popup-container {
 	position: relative;
 	color: $warm-grey-80;
-	width: 90%;
-	max-width: 750px;
-	margin: 4em auto;
+	width: 60%;
+	margin: 8em auto;
 	padding:30px 60px 30px 60px;
 	background: $white;
 	border-radius: 10px;
@@ -223,11 +275,16 @@ h6 {
 	transform: translateY(0);
 }
 
-@media only screen and (min-width: 1170px) {
+
+// for desktop
+@media (min-width: 960px) {
 	.cd-popup-container {
-		margin: 8em auto;
+	width: 90%;
+	max-width: 750px;
 	}
+
 }
+
 
 /*--------------RESULTS--------------*/
 
@@ -241,13 +298,6 @@ h6 {
 	background-color: rgba($white, 0.6);
 }
 
-.cardsm {
-	background-color: $white;
-	border-radius: 10px;
-	padding: 20px;
-	margin-top: 30px;
-}
-
 .tagcontainer {
 	margin: 5px 0 60px 0;
 }
@@ -257,10 +307,9 @@ h6 {
 }
 
 .icon {
-	top: -5px;
-	left: 5px;
+	left: 15px;
 	display: inline-block;
-	width: 18px;
+	width: 30px;
 	position: relative;
 }
 
@@ -289,8 +338,9 @@ h6 {
 	margin: 40px 5px 20px 5px;
 	border-radius: 50px;
 	display: inline-block;
-	width: 200px;
+	width: 180px;
 	cursor: pointer;
+	text-align: center;
 }
 
 .btn:hover {
@@ -304,6 +354,14 @@ h6 {
 	margin-top: -20px;
 }
 
+// for desktop
+@media (min-width: 960px) {
+	.icon {
+	top: -5px;
+	left: 10px;
+	width: 20px;
+	}
+}
 /*--------------TAGS AND CHECKBOXES--------------*/
 
 .tag {
@@ -383,7 +441,8 @@ h6 {
 	/*TAGS*/
 
 	.tagcontainer {
-		margin: 60px 0 200px 0;
+		padding: 10px 0 40px 0;
+		visibility: show;
 	}
 
 }    /*END ADMIN ONLY*/
@@ -439,4 +498,157 @@ h6 {
     -webkit-appearance: none;
     margin: 0;
     position: absolute;
+}
+
+.admin1 {
+
+}
+
+.admin2 {
+	color: blue;
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.show {
+	visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+/*TEST*/
+
+
+@import "compass/css3";
+
+header {
+  width:100%;
+  height:80px;
+}
+
+
+.menu {
+  float:right;
+  display:none;
+  text-align:right;
+  
+  li {  
+   
+    display:inline-block;
+    color: $white;
+    padding: 25px 25px 0 25px;
+    font-size: 1em;
+
+
+    &:last-child{
+      border:none;
+    }
+    
+    a {
+      color:$white;
+      }
+   } 
+}
+
+ .clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+@media (max-width: 960px) {
+    
+  .menu {
+     text-align:left;
+     width:100%;
+     background-color: $darkest-grape;
+     margin: 0;  
+     display:block;
+
+    li {
+     display:none;
+      a {
+        display:table;
+        width:100%;
+        overflow:hidden; 
+        font-weight: 700;
+        padding-bottom: 25px;
+        border-bottom: solid 1px black;
+      }
+    }
+  }
+  .burger {
+    width: 70px;
+    height: 80px;
+    display: block;
+    background: transparent;
+    @include transition(all .6s ease-in-out);
+    
+    // Remove the below styles - only used to center anchor on page
+    position: absolute;
+    top: 5px;
+    right: -25px;
+    @include translate(-50%, 0);
+    // Remove above //
+    
+    i {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include translate(-50%, -50%);
+      @include transition(all .2s ease-in-out);
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        background: $white;
+        width: 20px;
+        top: 50%;
+        left: 50%;
+        @include translate(-50%, -50%);
+        @include transition(all .2s ease-in-out);
+      }
+      &:before {  
+        margin-top: -8px;
+      }
+      &:after {
+        margin-top: 8px;
+      }
+    }
+    
+    &.active {
+      i {
+        background: transparent;
+        &:before,
+        &:after {
+          left: -2px;
+          width: 20px;
+        }
+        &:before {
+          @include rotate(45deg);
+          top: 8px;
+        }
+        &:after {
+          @include rotate(-45deg);
+          top: -8px;
+        }
+      }
+    }
+  }
 }
