@@ -1,0 +1,44 @@
+<% wrap_layout :site_layout do %>
+<header>
+	<nav id="header">
+		<div class="flexcontainer topbar">
+			<div id="logo" class="col-12">
+				<div class="padded-lr">
+					<a href="index.html"><h1>Data @ The Artificial</h1></a>
+
+        <a href="#" class="burger">
+            <i></i>
+        </a>
+        <ul class="menu">
+            <li>
+				<div class="checkbox"></div>Multiple data sets<br>
+				<br>
+				<div class="checkbox"></div>Compare to average
+            </li>
+            <li><a href="#">Functions</a>
+            </li>
+            <li><a href="#">Chart type</a>
+            </li>
+        </ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+
+
+<script type="text/javascript">
+$(".burger").click(function() {
+    $(this).toggleClass('active');
+    $("ul.menu li").slideToggle('fast');
+})
+
+$(window).resize(function() {
+    if ($(window).width() > 960) {
+        $('ul.menu li').removeAttr('style');
+    }
+})
+</script>
+
+<%= yield %>
+<% end %>

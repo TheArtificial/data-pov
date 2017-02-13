@@ -193,7 +193,7 @@ h6 {
 
 	.question {
 		color: $white;
-		margin: 25vh 0 40px 0;
+		margin: 50px 0 40px 0;
 	}
 
 /*index tags*/
@@ -216,6 +216,10 @@ h6 {
 	.tag:hover {
 		color: $white;
 	 	background-color: $warm-grey-40
+	}
+
+	.btn {
+	margin: 10px 0px 0px 0px;
 	}
 }    /*END INDEX ONLY*/
 
@@ -246,9 +250,11 @@ h6 {
 .cd-popup-container {
 	position: relative;
 	color: $warm-grey-80;
-	width: 60%;
-	margin: 8em auto;
-	padding:30px 60px 30px 60px;
+	width: 80%;
+	height:70%;
+	overflow: auto;
+	margin: 6em auto;
+	padding: 30px 20px 30px 10px;
 	background: $white;
 	border-radius: 10px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -281,7 +287,17 @@ h6 {
 	.cd-popup-container {
 	width: 90%;
 	max-width: 750px;
+	padding:30px 60px 30px 60px;
+	margin: 8em auto;
+	height:auto;
+	overflow: auto;
 	}
+
+	.question {
+		color: $white;
+		margin: 100px 0 40px 0;
+	}
+
 
 }
 
@@ -335,7 +351,7 @@ h6 {
 	color: $dark-grape;
 	font-weight: 500;
 	padding: 10px 30px 10px 30px;
-	margin: 40px 5px 20px 5px;
+	margin: 40px 0px 0px 0px;
 	border-radius: 50px;
 	display: inline-block;
 	width: 180px;
@@ -356,10 +372,16 @@ h6 {
 
 // for desktop
 @media (min-width: 960px) {
+
 	.icon {
 	top: -5px;
 	left: 10px;
 	width: 20px;
+	}
+
+	.btn {
+	padding: 10px 30px 10px 30px;
+	margin: 40px 5px 20px 5px;
 	}
 }
 /*--------------TAGS AND CHECKBOXES--------------*/
