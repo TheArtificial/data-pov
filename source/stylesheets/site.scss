@@ -306,8 +306,6 @@ h6 {
 		color: $white;
 		margin: 100px 0 40px 0;
 	}
-
-
 }
 
 
@@ -376,7 +374,6 @@ h6 {
 
 // for desktop
 @media (min-width: 960px) {
-
 	.icon {
 	top: -5px;
 	left: 10px;
@@ -557,13 +554,6 @@ h6 {
 	color: $white;
 }
 
-
-
-
-
-
-
-
 /*TEST*/
 
 
@@ -586,15 +576,14 @@ header {
     padding: 25px 25px 0 25px;
     font-size: 1em;
 
-
     &:last-child{
       border:none;
     }
     
-    a {
+ 	a {
       color:$white;
-      }
-   } 
+ 	}	
+  } 
 }
 
  .clearfix:after {
@@ -606,7 +595,6 @@ header {
 }
 
 @media (max-width: 960px) {
-    
   .menu {
      text-align:left;
      width:100%;
@@ -616,16 +604,17 @@ header {
 
     li {
      display:none;
-      a {
-        display:table;
-        width:100%;
-        overflow:hidden; 
-        font-weight: 700;
-        padding-bottom: 25px;
-        border-bottom: solid 1px black;
-      }
+	     a {
+	        display:table;
+	        width:100%;
+	        overflow:hidden; 
+	        font-weight: 700;
+	        padding-bottom: 25px;
+	        border-bottom: solid 1px black;
+	     }
     }
   }
+  
   .burger {
     width: 70px;
     height: 80px;
