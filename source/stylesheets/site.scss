@@ -45,11 +45,15 @@
 // for desktop
 @media (min-width: 960px) {
 	#admin {
-		padding-top: 60px;
+		padding-top: 90px;
 	}
 
 	#content {
-		padding-top: 60px;
+		padding-top: 90px;
+	}
+
+	#home {
+		padding-top: 150px;
 	}
 }
 
@@ -87,6 +91,10 @@ h2 {
 
 h3 {
 	font-style: normal;
+}
+
+h4 {
+	margin-top: 20px;
 }
 
 h6 {
@@ -345,13 +353,6 @@ h6 {
 	padding-bottom: 14px;
 }
 
-.arrows {
-	top: 0px;
-	display: inline-block;
-	width: 42px;
-	position: relative;
-}
-
 .right {
 	text-align: right;
 }
@@ -489,8 +490,27 @@ h6 {
 	/*TAGS*/
 
 	.tagcontainer {
-		padding: 10px 0 40px 0;
-		visibility: show;
+		padding: 0 0 40px 0;
+	}
+
+	ul {
+		padding: 0;
+	}
+
+	li {
+		margin: 15px auto;
+		display: inline;
+	}
+
+	.card {
+		ul {
+			padding: 0;
+		}
+
+		li {
+			margin: 15px auto;
+			display: block;
+		}
 	}
 
 }    /*END ADMIN ONLY*/
@@ -558,14 +578,13 @@ h6 {
 	color: $white;
 }
 
-/*TEST*/
+/*--------------HAMBURGER MENU--------------*/
 
 
 @import "compass/css3";
 
 header {
   width:100%;
-  height:80px;
 }
 
 .menu {
