@@ -127,6 +127,9 @@ h6 {
 
 	.topbar {
 		border-top-color: $white;
+	}
+
+	.flex.container {
 		border-bottom-color: transparent;
 	}
 
@@ -135,9 +138,9 @@ h6 {
 	}
 }
 
-#footer {
 
-	.flex container {
+#footer {
+	.flex.container {
 		border-top-color: transparent;
 	}
 }
@@ -196,6 +199,7 @@ h6 {
 		color: $white;
 		margin: 50px 0 40px 0;
 	}
+
 
 /*index tags*/
 
