@@ -92,9 +92,8 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :development do
-  require "better_errors"
-  use BetterErrors::Middleware
-  BetterErrors.application_root = __dir__
+  require 'lib/rack_validate'
+  use ::Rack::Validate
 end
 
 # Build-specific configuration
