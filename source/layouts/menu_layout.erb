@@ -26,8 +26,8 @@
             </li>
             <li>
                <div class="tagcontainer">
-                    <h4>Other functions</h4>
-                    <ul>
+                    <h4 class="otherfunctions">Other functions</h4>
+                    <ul class="otherfunctionslist">
                         <li>
                             <a class="tag" href="">Proportions</a>
                         </li>
@@ -66,8 +66,8 @@
             </li>
             <li>
                <div class="tagcontainer">
-                    <h4>Chart type</h4>
-                    <ul>
+                    <h4 class="charttypes">Chart types</h4>
+                    <ul class="charttypeslist">
                         <li>
                             <a class="tag" href="">Bar charts</a> 
                         </li>
@@ -119,6 +119,16 @@ $(window).resize(function() {
     if ($(window).width() > 960) {
         $('ul.menu>li').removeAttr('style');
     }
+})
+
+$(".otherfunctions").click(function() {
+    $(this).toggleClass('active');
+    $("ul.otherfunctionslist>li").slideToggle('fast');
+})
+
+$(".charttypes").click(function() {
+    $(this).toggleClass('active');
+    $("ul.charttypeslist>li").slideToggle('fast');
 })
 </script>
 

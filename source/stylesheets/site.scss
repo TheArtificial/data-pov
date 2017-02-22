@@ -33,6 +33,7 @@
 }
 
 /*--------------SECTIONS--------------*/
+
 #admin {
 	padding-top: 10px;
 }
@@ -128,20 +129,11 @@ li {
 #logo {
 	top: 15px;
 	position: relative;
+	color: $white;
 }
 
 #header {
 		background-color: $darkest-grape;
-
-		#nav-primary {
-			ul {
-				li {
-				  a {
-					  color: $white;
-					}
-				}
-			}
-		}
 
 	.topbar {
 		border-top-color: $white;
@@ -149,10 +141,6 @@ li {
 
 	.flex.container {
 		border-bottom-color: transparent;
-	}
-
-	a {
-		color: $white;
 	}
 }
 
@@ -601,7 +589,7 @@ li {
 @import "compass/css3";
 
 header {
-  width:100%;
+  width: 100%;
 }
 
 .menu {
@@ -617,16 +605,93 @@ header {
     color: $white;
     font-size: 1.5em;
 
-
-    &:last-child{
-      border:none;
-    }
-    
- 	a {
-      color:$white;
- 	}	
   } 
-}
+
+	.tagcontainer {
+		margin: 0;
+	}
+
+
+  .tag {
+	background-color: $dark-grape;
+	padding: 5px 10px 5px 10px;
+	margin: 4px 0 4px 0;
+	border-radius: 50px;
+	display: inline-block;
+	}
+
+	.selected {
+		background-color: $white;
+		color: $darkest-grape;
+	}
+
+
+	.disabled {
+		color: $darkest-grape;
+		background-color: $dark-grape;
+	}
+
+
+	.checkbox {
+		display: none;
+	}
+
+	.checkbox + label {
+		background-color: $dark-grape;
+		padding: 9px;
+		border-radius: 3px;
+		display: inline-block;
+		position: relative;
+		margin-right: 10px;
+	}
+
+	.checkbox + label:active, .checkbox:checked + label:active {
+	}
+
+	.checkbox:checked + label {
+		background-color: $white;
+	}
+
+	.checkbox:checked + label:after {
+		content: '\2713';
+		font-size: 16px;
+		position: absolute;
+		top: -6px;
+		left: 3px;
+		color: $dark-grape;
+	}
+
+} /*end menu only*/
+
+	.otherfunctions {
+		margin-left: 20px
+	}
+
+	.charttypes {
+		margin-left: 20px;
+	}
+/*
+	.otherfunctionslist {
+		display: none;
+		  	&>li {  
+		    display: block;
+
+		    &:last-child{
+		      border:none;
+		    }
+		}
+	}
+
+	.charttypeslist {
+		display: none;
+		  	&>li {  
+		    display: block;
+
+		    &:last-child{
+		      border:none;
+		    }
+		}
+	}*/
 
  .clearfix:after {
    content: " ";
@@ -639,18 +704,17 @@ header {
 
 @media (max-width: 960px) {
   .menu {
-     text-align:left;
-     width:100%;
-     background-color: $darkest-grape;
-     margin: 0px;  
-     display: block;
+    text-align:left;
+    width:100%;
+    background-color: $darkest-grape;
+    margin: 0px;  
+    display: block;
 
     &>li {
-     display:none;
-	     a {
-	        display:block;
-	        overflow:scroll; 
-	     }
+    	display:none;
+		     a {
+		        display:block;
+		     }
     }
   }
   
@@ -669,17 +733,16 @@ header {
     // Remove above //
     
     i {
-      display: block;
-      width: 20px;
-      height: 2px;
-      background: $white;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      @include translate(-50%, -50%);
-      @include transition(all .2s ease-in-out);
-      &:before,
-      &:after {
+    	display: block;
+   		width: 20px;
+  		height: 2px;
+  	 	background: $white;
+ 	  	position: absolute;
+   		top: 50%;
+    	left: 50%;
+	    @include translate(-50%, -50%);
+    	@include transition(all .2s ease-in-out);     &:before,
+    	&:after {
         content: '';
         position: absolute;
         height: 2px;
@@ -702,7 +765,7 @@ header {
     
     &.active {
       i {
-        background: transparent;
+		background: transparent;
         &:before,
         &:after {
           left: -2px;
