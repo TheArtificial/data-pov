@@ -4,36 +4,105 @@
 		<div class="flex container topbar">
 			<div class="col-12">
 				<div class="padded-lr">
-					<a href="index.html"><h1 id="logo">Data @ The Artificial</h1></a>
-
-                <a href="#" class="burger">
-                    <i></i>
-                </a>
+					<a href="index.html">
+                        <h1 id="logo">Data @ The Artificial</h1>
+                    </a>
+                    <a href="#" class="burger">
+                        <i></i>
+                    </a>
 				</div>
 			</div>
 		</div>
-          <ul class="menu">
+        <ul class="menu">
             <li>
-                <div class="checkbox"></div>Multiple data sets<br>
-                <br>
-                <div class="checkbox"></div>Compare to average<br>
+                <ul class="flags">
+                    <li>
+                        <input type="checkbox" id="checkbox-1-1" class="checkbox"><label for="checkbox-1-1"></label> Multiple data sets
+                    </li>
+                    <li>
+                        <input type="checkbox" id="checkbox-1-2" class="checkbox"><label for="checkbox-1-2"></label> Compare to average
+                    </li>
+                </ul>
             </li>
-            <li><a href="#">Functions</a>
-                <div class="menutags">
-                    <a class="tag" href="">Proportions</a>
-                    <a class="tag selected" href="">Aggregations</a> 
-                    <a class="tag" href="">Range</a>
-                    <a class="tag" href="">Cycles</a> 
-                    <a class="tag" href="">Hierarchy</a> 
-                    <a class="tag" href="">Continuous intervals</a> 
-                    <a class="tag disabled">Flow</a> 
-                    <a class="tag disabled">Deviation from normal</a> 
-                    <a class="tag" href="">Location</a> 
-                    <a class="tag" href="">Pattern</a> 
-                    <a class="tag" href="">Change over time</a>
+            <li>
+               <div class="tagcontainer">
+                    <h4>Other functions</h4>
+                    <ul>
+                        <li>
+                            <a class="tag" href="">Proportions</a>
+                        </li>
+                        <li>
+                            <a class="tag selected" href="">Aggregations</a> 
+                        </li>
+                        <li>
+                            <a class="tag" href="">Range</a>
+                        </li>
+                        <li>
+                            <a class="tag" href="">Cycles</a> 
+                        </li>
+                        <li>
+                            <a class="tag" href="">Hierarchy</a> 
+                        </li>
+                        <li>
+                            <a class="tag" href="">Continuous intervals</a> 
+                        </li>
+                        <li>
+                            <a class="tag disabled">Flow</a> 
+                        </li>
+                        <li>
+                            <a class="tag disabled">Deviation from normal</a> 
+                        </li>
+                        <li>
+                            <a class="tag" href="">Location</a> 
+                        </li>
+                        <li>
+                            <a class="tag" href="">Pattern</a> 
+                        </li>
+                        <li>
+                            <a class="tag" href="">Change over time</a>
+                        </li>
+                    </ul>
                 </div>
             </li>
-            <li><a href="#">Chart type</a>
+            <li>
+               <div class="tagcontainer">
+                    <h4>Chart type</h4>
+                    <ul>
+                        <li>
+                            <a class="tag" href="">Bar charts</a> 
+                        </li>
+                        <li>
+                            <a class="tag" href="">Histograms</a> 
+                        </li>
+                        <li>
+                            <a class="tag disabled">Range charts</a> 
+                        </li>
+                        <li>
+                            <a class="tag disabled">Line charts</a> 
+                        </li>
+                        <li>
+                            <a class="tag" href="">Area charts</a> 
+                        </li>
+                        <li>
+                            <a class="tag disabled">Scatter plots</a> 
+                        </li>
+                        <li>
+                            <a class="tag disabled">Radial charts</a> 
+                        </li>
+                        <li>
+                            <a class="tag" href="">Composition</a> 
+                        </li>
+                        <li>
+                            <a class="tag" href="">Calendars</a> 
+                        </li>
+                        <li>
+                            <a class="tag" href="">Geographical maps</a> 
+                        </li>
+                        <li>
+                            <a class="tag disabled">Networks</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
         </ul>
 	</nav>
@@ -43,12 +112,12 @@
 <script type="text/javascript">
 $(".burger").click(function() {
     $(this).toggleClass('active');
-    $("ul.menu li").slideToggle('fast');
+    $("ul.menu>li").slideToggle('fast');
 })
 
 $(window).resize(function() {
     if ($(window).width() > 960) {
-        $('ul.menu li').removeAttr('style');
+        $('ul.menu>li').removeAttr('style');
     }
 })
 </script>
