@@ -112,12 +112,12 @@
 <script type="text/javascript">
 $(".burger").click(function() {
     $(this).toggleClass('active');
-    $("ul.menu>li").slideToggle('fast');
+    $("ul.menu").slideToggle('fast');
 })
 
 $(window).resize(function() {
     if ($(window).width() > 960) {
-        $('ul.menu>li').removeAttr('style');
+        $('ul.menu').removeAttr('style');
     }
 })
 

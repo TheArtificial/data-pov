@@ -708,13 +708,15 @@ header {
     width:100%;
     background-color: $darkest-grape;
     margin: 0px;  
-    display: block;
+    display: none;
+
+	height: 90vh; // 90% of viewport height. imperfect but works on iPhones
+	overflow-y: scroll;
 
     &>li {
-    	display:none;
-		     a {
-		        display:block;
-		     }
+		a {
+			display:block;
+		}
     }
   }
   
