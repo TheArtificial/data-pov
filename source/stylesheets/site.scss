@@ -19,19 +19,6 @@
 //@import "_site-form";
 
 
-// for mobile
-@media only screen and (min-device-width: 320px) {
-
-}
-
-// for tablet
-@media only screen and (min-device-width: 768px) {
-}
-
-// for desktop
-@media (min-width: 960px) {
-}
-
 /*--------------SECTIONS--------------*/
 
 #admin {
@@ -49,6 +36,7 @@
 
 // for desktop
 @media (min-width: 960px) {
+
 	#admin {
 		padding-top: 90px;
 	}
@@ -64,18 +52,6 @@
 
 /*--------------TYPOGRAPHY--------------*/
 
-.center {
-	text-align: center;
-}
-
-.description {
-	margin: 30px 0 10px;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, li, a {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
-}
-
 p {
 	font-size: 1em;
 	line-height: 1.2em;
@@ -85,6 +61,10 @@ p {
 
 a { 
 	color: $warm-grey-80;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, a {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 h1 {
@@ -119,12 +99,15 @@ li {
 	display: block;
 }
 
-// for desktop
-@media (min-width: 960px) {
+.center {
+	text-align: center;
 }
 
+.description {
+	margin: 30px 0 10px;
+}
 
-/*--------------LAYOUT--------------*/
+/*--------------TEMPLATE--------------*/
 
 #logo {
 	top: 15px;
@@ -133,7 +116,7 @@ li {
 }
 
 #header {
-		background-color: $darkest-grape;
+	background-color: $darkest-grape;
 
 	.topbar {
 		border-top-color: $white;
@@ -158,7 +141,6 @@ li {
 .mobiletitle {
 	display: inline-block;
 	padding-top: 0;
-
 }
 
 .tagcontainer {
@@ -170,6 +152,7 @@ li {
 
 // for desktop
 @media (min-width: 960px) {
+
 	.sidenav {
 		display: initial;
 	}
@@ -179,7 +162,7 @@ li {
 	}
 }
 
-/*--------------INDEX ONLY--------------*/
+/*--------------HOME ONLY--------------*/
 
 #home {    
 	background-color: $darkest-grape;
@@ -197,15 +180,15 @@ li {
 			}
 		}
 
-	.topbar {
-		border-top-color: $white;
-		border-bottom-color: transparent;
-	}
+		.topbar {
+			border-top-color: $white;
+			border-bottom-color: transparent;
+		}
 
-	a {
-		color: $white;
+		a {
+			color: $white;
+		}
 	}
-}
 
 	.question {
 		color: $white;
@@ -213,7 +196,7 @@ li {
 	}
 
 
-/*index tags*/
+/*home tags*/
 
 	.tagcontainer {
 		margin: 5px 0 200px 0;
@@ -236,19 +219,20 @@ li {
 	}
 
 	.btn {
-	margin: 10px 0px 0px 0px;
+		margin: 10px 0px 0px 0px;
 	}
 
 // for desktop
 @media (min-width: 960px) {
+
 	.btn {
-	margin: 40px 5px 20px 5px;
+		margin: 40px 5px 20px 5px;
 	}
 }
 
-}    /*END INDEX ONLY*/
+}    /*END HOME ONLY*/
 
-/*--------------POPUP--------------*/
+/*--------------HOME POPUP--------------*/
 
 .cd-popup {
 	position: fixed;
@@ -309,6 +293,7 @@ li {
 
 // for desktop
 @media (min-width: 960px) {
+
 	.cd-popup-container {
 		width: 90%;
 		max-width: 750px;
@@ -331,6 +316,10 @@ li {
 	border-radius: 10px;
 	background-color: $white;
 	padding: 20px;
+
+	.btn {
+		margin: 20px auto;
+	}
 }
 
 .card:hover {
@@ -361,7 +350,6 @@ li {
 	text-align: right;
 }
 
-
 .btn {
 	border: solid 2px $dark-grape;
 	color: $dark-grape;
@@ -380,31 +368,9 @@ li {
 	color: $white;
 }
 
-.card {
-	.btn {
-		margin: 20px auto;
-	}
+.mobilebtn{
+	text-align: center;
 }
-
-
-// for desktop
-@media (min-width: 960px) {
-	.icon {
-		top: -5px;
-		left: 10px;
-		width: 20px;
-	}
-
-	.btn {
-		padding: 10px 30px 10px 30px;
-		margin: 0 0 60px 0px;
-	}
-
-	.viztop {
-		padding-top: 70px;
-	}
-}
-/*--------------TAGS AND CHECKBOXES--------------*/
 
 .tag {
 	font-size: .8em;
@@ -440,9 +406,9 @@ li {
 .flags {
 	display: block;
 
-	li {
-		display: block;
-	}
+		li {
+			display: block;
+		}
 }
 
 .checkbox {
@@ -473,6 +439,224 @@ li {
 	left: 3px;
 	color: $white;
 }
+
+// for desktop
+@media (min-width: 960px) {
+	.icon {
+		top: -5px;
+		left: 10px;
+		width: 20px;
+	}
+
+	.btn {
+		padding: 10px 30px 10px 30px;
+		margin: 0 0 60px 0px;
+	}
+
+	.mobilebtn{
+		text-align: left;
+	}
+
+	.viztop {
+		padding-top: 70px;
+	}
+}
+
+/*--------------HAMBURGER MENU--------------*/
+
+
+@import "compass/css3";
+
+.menu {
+	display:none;
+	text-align:right;
+
+	ul {
+		padding: 20px;
+	}
+
+	.otherfunctions {
+		margin-left: 20px
+	}
+
+	.charttypes {
+		margin-left: 20px;
+	}
+
+	.otherfunctionslist, .charttypeslist
+	{
+		display: none; // will be modified to `block` by jQuery .slideToggle() 
+	}
+
+	.charttypeslist {
+		margin-bottom: 100px;
+	}
+
+  	&>li {  
+    display: block;
+    color: $white;
+    font-size: 1.5em;
+	} 
+
+	.tagcontainer {
+		margin: 0;
+	}
+
+	.tag {
+		background-color: #271035;
+		font-weight: 500;
+		padding: 8px 15px 8px 15px;
+		margin: 4px 0 4px 0;
+		border-radius: 50px;
+		display: inline-block;
+	}
+
+	.selected {
+		background-color: $white;
+		color: $darkest-grape;
+	}
+
+	.disabled {
+		color: $dark-grape;
+		background-color: #271035;
+	}
+
+	.downchevron {
+		width: 16px;
+		float: right;
+		left: -40px;
+		top: -25px;
+		position: relative;
+	}
+
+	.checkbox {
+		display: none;
+	}
+
+	.checkbox + label {
+		background-color: #271035;
+		padding: 9px;
+		border-radius: 3px;
+		display: inline-block;
+		position: relative;
+		margin-right: 10px;
+	}
+
+	.checkbox + label:active, .checkbox:checked + label:active {
+	}
+
+	.checkbox:checked + label {
+		background-color: $white;
+	}
+
+	.checkbox:checked + label:after {
+		content: '\2713';
+		font-size: 16px;
+		position: absolute;
+		top: -6px;
+		color: $dark-grape;
+	}
+
+} /*end menu only*/
+
+.clearfix:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+
+@media (max-width: 960px) {
+
+	.menu {
+		text-align:left;
+		width:100%;
+		background-color: $darkest-grape;
+		margin: 0px;  
+		display: none;
+
+		height: 90vh; // 90% of viewport height. imperfect but works on iPhones
+		overflow-y: scroll;
+
+	    &>li {
+			a {
+				display:block;
+			}
+	    }
+ 	 }
+
+	.burger {
+	    width: 70px;
+	    height: 80px;
+	    display: block;
+	    background: transparent;
+	    @include transition(all .6s ease-in-out);
+	    
+	    // Remove the below styles - only used to center anchor on page
+	    position: absolute;
+	    top: 5px;
+	    right: -25px;
+	    @include translate(-50%, 0);
+	    // Remove above //
+    
+	    i {
+	    	display: block;
+	   		width: 20px;
+	  		height: 2px;
+	  	 	background: $white;
+	 	  	position: absolute;
+	   		top: 50%;
+	    	left: 50%;
+		    @include translate(-50%, -50%);
+	    	@include transition(all .2s ease-in-out);     
+
+	    	&:before,
+	    	&:after {
+		        content: '';
+		        position: absolute;
+		        height: 2px;
+		        background: $white;
+		        width: 20px;
+		        top: 50%;
+		        left: 50%;
+		        @include translate(-50%, -50%);
+		        @include transition(all .2s ease-in-out);
+		    }
+
+			&:before {  
+				margin-top: -8px;
+			}
+
+			&:after {
+				margin-top: 8px;
+			}
+		}
+
+		&.active {
+			i {
+				background: transparent;
+				&:before,
+				&:after {
+					left: -2px;
+					width: 20px;
+				}
+
+				&:before {
+					@include rotate(45deg);
+					top: 8px;
+				}
+
+				&:after {
+					@include rotate(-45deg);
+					top: -8px;
+				}
+			}
+		}
+	}
+}
+
 
 /*--------------ADMIN ONLY--------------*/
 
@@ -525,8 +709,6 @@ li {
 	background-color: $white;
 	margin-top: -20px;
 }
-
-/*--------------SEGMENTED CONTROL--------------*/
 
 .segmented {
     display: flex;
@@ -581,213 +763,4 @@ li {
 
 .segmented .checked a{
 	color: $white;
-}
-
-/*--------------HAMBURGER MENU--------------*/
-
-
-@import "compass/css3";
-
-header {
-  width: 100%;
-}
-
-.menu {
-	display:none;
-	text-align:right;
-
-	ul {
-		padding: 20px;
-	}
-
-	.otherfunctionslist, .charttypeslist
-	{
-		display: none; // will be modified to `block` by jQuery .slideToggle() 
-	}
-
-  	&>li {  
-    display: block;
-    color: $white;
-    font-size: 1.5em;
-
-  } 
-
-	.tagcontainer {
-		margin: 0;
-	}
-
-
-  .tag {
-	background-color: #271035;
-	font-weight: 500;
-	padding: 5px 10px 5px 10px;
-	margin: 4px 0 4px 0;
-	border-radius: 50px;
-	display: inline-block;
-	}
-
-	.selected {
-		background-color: $white;
-		color: $darkest-grape;
-	}
-
-
-	.disabled {
-		color: $dark-grape;
-		background-color: #271035;
-	}
-
-
-	.checkbox {
-		display: none;
-	}
-
-	.checkbox + label {
-		background-color: #271035;
-		padding: 9px;
-		border-radius: 3px;
-		display: inline-block;
-		position: relative;
-		margin-right: 10px;
-	}
-
-	.checkbox + label:active, .checkbox:checked + label:active {
-	}
-
-	.checkbox:checked + label {
-		background-color: $white;
-	}
-
-	.checkbox:checked + label:after {
-		content: '\2713';
-		font-size: 16px;
-		position: absolute;
-		top: -6px;
-		left: 3px;
-		color: $dark-grape;
-	}
-
-} /*end menu only*/
-
-	.otherfunctions {
-		margin-left: 20px
-	}
-
-	.charttypes {
-		margin-left: 20px;
-	}
-/*
-	.otherfunctionslist {
-		display: none;
-		  	&>li {  
-		    display: block;
-
-		    &:last-child{
-		      border:none;
-		    }
-		}
-	}
-
-	.charttypeslist {
-		display: none;
-		  	&>li {  
-		    display: block;
-
-		    &:last-child{
-		      border:none;
-		    }
-		}
-	}*/
-
- .clearfix:after {
-   content: " ";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-}
-
-
-@media (max-width: 960px) {
-  .menu {
-    text-align:left;
-    width:100%;
-    background-color: $darkest-grape;
-    margin: 0px;  
-    display: none;
-
-	height: 90vh; // 90% of viewport height. imperfect but works on iPhones
-	overflow-y: scroll;
-
-    &>li {
-		a {
-			display:block;
-		}
-    }
-  }
-  
-  .burger {
-    width: 70px;
-    height: 80px;
-    display: block;
-    background: transparent;
-    @include transition(all .6s ease-in-out);
-    
-    // Remove the below styles - only used to center anchor on page
-    position: absolute;
-    top: 5px;
-    right: -25px;
-    @include translate(-50%, 0);
-    // Remove above //
-    
-    i {
-    	display: block;
-   		width: 20px;
-  		height: 2px;
-  	 	background: $white;
- 	  	position: absolute;
-   		top: 50%;
-    	left: 50%;
-	    @include translate(-50%, -50%);
-    	@include transition(all .2s ease-in-out);     &:before,
-    	&:after {
-        content: '';
-        position: absolute;
-        height: 2px;
-        background: $white;
-        width: 20px;
-        top: 50%;
-        left: 50%;
-        @include translate(-50%, -50%);
-        @include transition(all .2s ease-in-out);
-      }
-
-      &:before {  
-        margin-top: -8px;
-      }
-
-      &:after {
-        margin-top: 8px;
-      }
-    }
-    
-    &.active {
-      i {
-		background: transparent;
-        &:before,
-        &:after {
-          left: -2px;
-          width: 20px;
-        }
-        &:before {
-          @include rotate(45deg);
-          top: 8px;
-        }
-        &:after {
-          @include rotate(-45deg);
-          top: -8px;
-        }
-      }
-    }
-  }
 }
