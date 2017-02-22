@@ -493,7 +493,6 @@ li {
   	&>li {  
     display: block;
     color: $white;
-    font-size: 1.5em;
 	} 
 
 	.tagcontainer {
@@ -502,9 +501,9 @@ li {
 
 	.tag {
 		background-color: #271035;
-		font-weight: 500;
-		padding: 8px 15px 8px 15px;
-		margin: 4px 0 4px 0;
+		font-size: 1em;
+		padding: 10px 30px 10px 30px;
+		margin: 4px 0px;
 		border-radius: 50px;
 		display: inline-block;
 	}
@@ -693,6 +692,7 @@ li {
 	.tagcontainer {
 		padding-top: 20px;
 		width:100%;
+		margin-bottom: 0px;
 	}
 
 	.card {
@@ -706,7 +706,12 @@ li {
 .savebar {
 	height: 60px;
 	background-color: $white;
-	margin-top: -20px;
+	margin-top: 60px;
+}
+
+.leftmargin {
+	float:right;
+	margin-right: 50px;
 }
 
 .segmented {
@@ -714,6 +719,7 @@ li {
     flex-flow: row wrap;
     box-sizing: border-box;
     text-align: center;
+    margin-top: 100px;
 }
 
 .segmented label {
@@ -754,7 +760,7 @@ li {
 }
 
 .segmented input[type="radio"] {
-    appearance: none;
+    opacity: 0;
     -webkit-appearance: none;
     margin: 0;
     position: absolute;
@@ -762,4 +768,27 @@ li {
 
 .segmented .checked a {
 	color: $white;
+}
+
+// for desktop
+@media (min-width: 960px) {
+
+	.segmented {
+		margin-top: 0px;
+	}
+
+	.savebar {
+		margin-top: -20px;
+	}
+
+	.tagcontainer {
+		margin-bottom: 0px;
+	}
+
+	.leftmargin {
+		margin-right: 0px;
+	}
+
+
+
 }
