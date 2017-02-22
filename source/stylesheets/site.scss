@@ -600,6 +600,11 @@ header {
 		padding: 20px;
 	}
 
+	.otherfunctionslist, .charttypeslist
+	{
+		display: none; // will be modified to `block` by jQuery .slideToggle() 
+	}
+
   	&>li {  
     display: block;
     color: $white;
