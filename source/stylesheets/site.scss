@@ -663,7 +663,7 @@ header {
      margin: 0px;  
      display:block;
 
-    li {
+    &>li {
      display:none;
 	     a {
 	        display:block;
