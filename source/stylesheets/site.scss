@@ -618,7 +618,8 @@ header {
 
 
   .tag {
-	background-color: $dark-grape;
+	background-color: #271035;
+	font-weight: 500;
 	padding: 5px 10px 5px 10px;
 	margin: 4px 0 4px 0;
 	border-radius: 50px;
@@ -632,8 +633,8 @@ header {
 
 
 	.disabled {
-		color: $darkest-grape;
-		background-color: $dark-grape;
+		color: $dark-grape;
+		background-color: #271035;
 	}
 
 
@@ -642,7 +643,7 @@ header {
 	}
 
 	.checkbox + label {
-		background-color: $dark-grape;
+		background-color: #271035;
 		padding: 9px;
 		border-radius: 3px;
 		display: inline-block;
