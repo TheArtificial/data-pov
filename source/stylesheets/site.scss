@@ -290,6 +290,10 @@ li {
 	transform: translateY(0);
 }
 
+.iconlrg {
+	width: 60px;
+	padding-bottom: 14px;
+}
 
 // for desktop
 @media (min-width: 960px) {
@@ -341,11 +345,6 @@ li {
 	position: relative;
 }
 
-.iconlrg {
-	width: 60px;
-	padding-bottom: 14px;
-}
-
 .right {
 	text-align: right;
 }
@@ -368,7 +367,7 @@ li {
 	color: $white;
 }
 
-.mobilebtn{
+.mobilebtn {
 	text-align: center;
 }
 
@@ -406,9 +405,9 @@ li {
 .flags {
 	display: block;
 
-		li {
-			display: block;
-		}
+	li {
+		display: block;
+	}
 }
 
 .checkbox {
@@ -453,7 +452,7 @@ li {
 		margin: 0 0 60px 0px;
 	}
 
-	.mobilebtn{
+	.mobilebtn {
 		text-align: left;
 	}
 
@@ -483,8 +482,7 @@ li {
 		margin-left: 20px;
 	}
 
-	.otherfunctionslist, .charttypeslist
-	{
+	.otherfunctionslist, .charttypeslist {
 		display: none; // will be modified to `block` by jQuery .slideToggle() 
 	}
 
@@ -694,6 +692,7 @@ li {
 
 	.tagcontainer {
 		padding-top: 20px;
+		width:100%;
 	}
 
 	.card {
@@ -761,6 +760,6 @@ li {
     position: absolute;
 }
 
-.segmented .checked a{
+.segmented .checked a {
 	color: $white;
 }
