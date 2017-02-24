@@ -1,6 +1,5 @@
 // basic typography
-// this document should not be edited
-// ever
+
 
 img + h1, img + h2, img + h3, img + h4, img + h5, img + p {
 	margin: 0;
@@ -13,30 +12,53 @@ h1, h2, h3, h5, p {
 	padding-bottom: 20px;
 }
 
-h1, h2, h4, h5, p, ul, li {
+h1, h2, h3, h4, h5, h6, p, ul, li, a {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h3 {
-	font-family: "Georgia", Times, serif;
-	font-style: italic;
+h2 {
+	font-size: 2.2em;
 }
+
+h3 {
+	font-style: normal;
+}
+
 h4 {
+	margin-top: 20px;
 	text-transform: uppercase;
 	margin: 0;
 	padding-bottom: 10px;
 }
 
+h6 {
+	font-size: 1em;
+	line-height: 1.6em;
+	font-weight: 300;
+	margin: 0;
+}
+
+
 ul, li {
 	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	margin: 15px auto;
+	display: block;
 }
 
 p {
+	font-size: 1em;
+	line-height: 1.2em;
 	font-weight: 300;
+	margin-bottom: 20px;
 }
 
 a {
 	text-decoration: none;
+	color: $warm-grey-80;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -46,7 +68,7 @@ h1, h2, h3, h4, h5, p {
 // for mobile
 @media only screen and (min-device-width: 320px) {
 	h1 {
-		font-size: 2em;
+		font-size: 1.2em;
 		line-height: 1.25em;
 	}
 
@@ -74,7 +96,7 @@ h1, h2, h3, h4, h5, p {
 // for tablet
 @media only screen and (min-device-width: 768px) {
 	h1 {
-		font-size: 2.5em;
+		font-size: 1.3em;
 		line-height: 1.125em;
 	}
 
@@ -102,7 +124,7 @@ h1, h2, h3, h4, h5, p {
 // for desktop
 @media only screen and (min-width: 960px) {
 	h1 {
-		font-size: 3em;
+		font-size: 1.3em;
 		line-height: 1.05em;
 	}
 
