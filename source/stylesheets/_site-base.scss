@@ -361,6 +361,10 @@
 	color: $white;
 }
 
+.sidenav {
+	display: none;
+}
+
 // for desktop
 @media (min-width: 960px) {
 	.icon {
@@ -380,6 +384,14 @@
 
 	.viztop {
 		padding-top: 70px;
+	}
+
+	.sidenav {
+		display: initial;
+	}
+
+	.resultdata {
+		display: none;
 	}
 }
 
