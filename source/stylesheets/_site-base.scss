@@ -39,8 +39,7 @@
 	top: 15px;
 	position: relative;
 	color: $white;
-}
-	
+	}	
 }
 
 // for desktop
@@ -158,14 +157,13 @@
 		margin: 10px 0px 0px 0px;
 	}
 
-// for desktop
-@media (min-width: 960px) {
+	// for desktop
+	@media (min-width: 960px) {
 
-	.btn {
-		margin: 40px 5px 20px 5px;
+		.btn {
+			margin: 40px 5px 20px 5px;
+		}
 	}
-}
-
 }    /*END HOME ONLY*/
 
 /*--------------HOME POPUP--------------*/
@@ -483,7 +481,7 @@
 		content: '\2713';
 		font-size: 16px;
 		position: absolute;
-		top: -6px;
+		left: 0px;
 		color: $dark-grape;
 	}
 
@@ -530,7 +528,7 @@
 	    right: -25px;
 	    @include translate(-50%, 0);
 	    // Remove above //
-    
+
 	    i {
 	    	display: block;
 	   		width: 20px;
@@ -647,55 +645,55 @@
 }
 
 .segmented {
-    display: flex;
-    flex-flow: row wrap;
-    box-sizing: border-box;
-    text-align: center;
-    margin-top: 100px;
+	display: flex;
+	flex-flow: row wrap;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 100px;
 }
 
 .segmented label {
-    display: block;
-    flex: 1;
-    box-sizing: border-box;
-    border: 1px solid $darkest-grape;
-    border-right: none;
-    color: $darkest-grape;
-    margin: 0;
-    padding: 10px 30px 10px 30px;
-    user-select: none;
-    -webkit-user-select: none;
+	display: block;
+	flex: 1;
+	box-sizing: border-box;
+	border: 1px solid $darkest-grape;
+	border-right: none;
+	color: $darkest-grape;
+	margin: 0;
+	padding: 10px 30px 10px 30px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .segmented label.checked {
-    background: $darkest-grape;
-    color: $white;
+	background: $darkest-grape;
+	color: $white;
 }
 
 .segmented.inverted label {
-    border-color: $white;
-    color: $white;
-    background: none;
+	border-color: $white;
+	color: $white;
+	background: none;
 }
 
 .segmented.inverted label.checked {
-    background: $white;
-    color: inherit;
+	background: $white;
+	color: inherit;
 }
 
 .segmented label:first-child {
-    border-radius: 50px 0 0 50px;
+	border-radius: 50px 0 0 50px;
 }
 
 .segmented label:last-child {
-    border-radius: 0 50px 50px 0;
+	border-radius: 0 50px 50px 0;
 }
 
 .segmented input[type="radio"] {
-    opacity: 0;
-    -webkit-appearance: none;
-    margin: 0;
-    position: absolute;
+	opacity: 0;
+	-webkit-appearance: none;
+	margin: 0;
+	position: absolute;
 }
 
 .segmented .checked a {
