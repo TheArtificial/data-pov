@@ -42,18 +42,6 @@
 	}	
 }
 
-// for desktop
-@media (min-width: 960px) {
-
-	.sidenav {
-		display: initial;
-	}
-
-	.resultdata {
-		display: none;
-	}
-}
-
 /*--------------SECTIONS--------------*/
 
 #adminresult {
@@ -101,6 +89,7 @@
 
 	.btn {
 		margin: 20px auto;
+		width: 80%;
 	}
 }
 
@@ -113,7 +102,6 @@
 }
 
 .resultdata {
-	display: inline-block;
 	padding-top: 0;
 }
 
@@ -193,8 +181,8 @@
 .cd-popup-container {
 	position: relative;
 	color: $warm-grey-80;
-	width: 80%;
-	height:70%;
+/*	width: 80%;
+	height:70%;*/
 	overflow: auto;
 	margin: 6em auto;
 	padding: 30px 20px 30px 10px;
@@ -233,11 +221,8 @@
 @media (min-width: 960px) {
 
 	.cd-popup-container {
-		width: 90%;
-		max-width: 750px;
 		padding:30px 60px 30px 60px;
 		margin: 8em auto;
-		height:auto;
 		overflow: auto;
 	}
 
@@ -277,7 +262,7 @@
 	margin: 40px auto;
 	border-radius: 50px;
 	display: inline-block;
-	width: 180px;
+	width: 70%;
 	cursor: pointer;
 	text-align: center;
 }
@@ -364,7 +349,7 @@
 }
 
 // for desktop
-@media (min-width: 960px) {
+@media (min-device-width: 320px) {
 	.icon {
 		top: -5px;
 		left: 10px;
@@ -374,6 +359,7 @@
 	.btn {
 		padding: 10px 30px 10px 30px;
 		margin: 0 0 60px 0px;
+		width: 35%;
 	}
 
 	.mobilebtn {
@@ -397,107 +383,8 @@
 
 @import "compass/css3";
 
-.menu {
-	display:none;
-	text-align:right;
-
-	ul {
-		padding: 20px;
-	}
-
-	.otherfunctions {
-		margin-left: 20px
-	}
-
-	.charttypes {
-		margin-left: 20px;
-	}
-
-	.otherfunctionslist, .charttypeslist {
-		display: none; // will be modified to `block` by jQuery .slideToggle() 
-	}
-
-	.charttypeslist {
-		margin-bottom: 100px;
-	}
-
-  	&>li {  
-    display: block;
-    color: $white;
-	} 
-
-	.tagcontainer {
-		margin: 0;
-	}
-
-	.tag {
-		background-color: #271035;
-		font-size: 1em;
-		padding: 10px 30px 10px 30px;
-		margin: 4px 0px;
-		border-radius: 50px;
-		display: inline-block;
-	}
-
-	.selected {
-		background-color: $white;
-		color: $darkest-grape;
-	}
-
-	.disabled {
-		color: $dark-grape;
-		background-color: #271035;
-	}
-
-	.downchevron {
-		width: 16px;
-		float: right;
-		left: -40px;
-		top: -25px;
-		position: relative;
-	}
-
-	.checkbox {
-		display: none;
-	}
-
-	.checkbox + label {
-		background-color: #271035;
-		padding: 9px;
-		border-radius: 3px;
-		display: inline-block;
-		position: relative;
-		margin-right: 10px;
-	}
-
-	.checkbox + label:active, .checkbox:checked + label:active {
-	}
-
-	.checkbox:checked + label {
-		background-color: $white;
-	}
-
-	.checkbox:checked + label:after {
-		content: '\2713';
-		font-size: 16px;
-		position: absolute;
-		left: 0px;
-		color: $dark-grape;
-	}
-
-} /*end menu only*/
-
-.clearfix:after {
-	content: " ";
-	visibility: hidden;
-	display: block;
-	height: 0;
-	clear: both;
-}
-
-
-@media (max-width: 960px) {
-
+// for mobile
+@media only screen and (min-device-width: 320px) {
 	.menu {
 		text-align:left;
 		width:100%;
@@ -513,6 +400,90 @@
 				display:block;
 			}
 	    }
+
+    	ul {
+			padding: 20px;
+		}
+
+		.otherfunctions {
+			margin-left: 20px
+		}
+
+		.charttypes {
+			margin-left: 20px;
+		}
+
+		.otherfunctionslist, .charttypeslist {
+			display: none; // will be modified to `block` by jQuery .slideToggle() 
+		}
+
+		.charttypeslist {
+			margin-bottom: 100px;
+		}
+
+	  	&>li {  
+	    display: block;
+	    color: $white;
+		} 
+
+		.tagcontainer {
+			margin: 0;
+		}
+
+		.tag {
+			background-color: #271035;
+			font-size: 1em;
+			padding: 10px 30px 10px 30px;
+			margin: 4px 0px;
+			border-radius: 50px;
+			display: inline-block;
+		}
+
+		.selected {
+			background-color: $white;
+			color: $darkest-grape;
+		}
+
+		.disabled {
+			color: $dark-grape;
+			background-color: #271035;
+		}
+
+		.downchevron {
+			width: 16px;
+			float: right;
+			left: -40px;
+			top: -25px;
+			position: relative;
+		}
+
+		.checkbox {
+			display: none;
+		}
+
+		.checkbox + label {
+			background-color: #271035;
+			padding: 9px;
+			border-radius: 3px;
+			display: inline-block;
+			position: relative;
+			margin-right: 10px;
+		}
+
+		.checkbox + label:active, .checkbox:checked + label:active {
+		}
+
+		.checkbox:checked + label {
+			background-color: $white;
+		}
+
+		.checkbox:checked + label:after {
+			content: '\2713';
+			font-size: 16px;
+			position: absolute;
+			left: 0px;
+			color: $dark-grape;
+		}
  	 }
 
 	.burger {
@@ -583,9 +554,24 @@
 			}
 		}
 	}
+
 }
 
+@media (min-device-width: 768px) {
+	.burger{
+		display: none;
+	}
 
+
+	.clearfix:after {
+		content: " ";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+
+}
 /*--------------ADMIN ONLY--------------*/
 
 .admin {    
@@ -628,6 +614,7 @@
 
 	.tagcontainer {
 		padding-top: 20px;
+		margin-bottom: 10px;
 		width:100%;
 	}
 
@@ -696,6 +683,17 @@
 .segmented .checked a {
 	color: $white;
 }
+
+@media only screen and (min-device-width: 320px) {
+// on mobile, everything scales to a single scrolling column
+
+	.subnav.flex.container {
+		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+			width: 50%;
+		}
+	}
+}
+
 
 // for desktop
 @media (min-width: 960px) {
