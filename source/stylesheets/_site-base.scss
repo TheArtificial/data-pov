@@ -101,17 +101,13 @@
 	text-align: center;
 }
 
-.resultdata {
-	padding-top: 0;
-}
-
 .tagcontainer {
 	li {
 		display: inline;
 	}
 }
 
-/*--------------HOME ONLY--------------*/
+/*--------------HOME--------------*/
 
 #home {    
 	.question {
@@ -272,10 +268,6 @@
 	color: $white;
 }
 
-.mobilebtn {
-	text-align: center;
-}
-
 .tag {
 	font-size: .8em;
 	color: $white;
@@ -344,39 +336,8 @@
 	color: $white;
 }
 
-.sidenav {
-	display: none;
-}
-
-// for desktop
-@media (min-device-width: 320px) {
-	.icon {
-		top: -5px;
-		left: 10px;
-		width: 20px;
-	}
-
-	.btn {
-		padding: 10px 30px 10px 30px;
-		margin: 0 0 60px 0px;
-		width: 35%;
-	}
-
-	.mobilebtn {
-		text-align: left;
-	}
-
-	.viztop {
-		padding-top: 70px;
-	}
-
-	.sidenav {
-		display: initial;
-	}
-
-	.resultdata {
-		display: none;
-	}
+.resultdata {
+	padding-top: 0;
 }
 
 /*--------------RESULTS - HAMBURGER MENU--------------*/
@@ -484,7 +445,7 @@
 			left: 0px;
 			color: $dark-grape;
 		}
- 	 }
+ 	 } 	 /*end menu only*/
 
 	.burger {
 	    width: 70px;
@@ -555,13 +516,40 @@
 		}
 	}
 
+	.icon {
+		top: -5px;
+		left: 10px;
+		width: 20px;
+	}
+
+	.btn {
+		padding: 10px 30px 10px 30px;
+		width: 35%;
+		margin: 20px auto;
+	}
+
+	.viztop {
+		padding-top: 70px;
+	}
+
+	.sidenav {
+		display: none;
+	}
 }
 
+// for desktop
 @media (min-device-width: 768px) {
-	.burger{
+	.resultdata {
 		display: none;
 	}
 
+	.sidenav {
+		display: inline;
+	}
+
+	.burger{
+		display: none;
+	}
 
 	.clearfix:after {
 		content: " ";
@@ -570,8 +558,8 @@
 		height: 0;
 		clear: both;
 	}
-
 }
+
 /*--------------ADMIN ONLY--------------*/
 
 .admin {    
