@@ -56,13 +56,17 @@
 
 /*--------------SECTIONS--------------*/
 
-#admin {
-	padding-top: 10px;
+#adminresult {
+	padding-top: 0px;
+}
+
+#admindetail {
+	padding-top: 70px;
 }
 
 #content {
 	background-color: rgba($warm-grey-10, 0.35);
-	padding-top: 80px;
+	padding-top: 90px;
 }
 
 #home {
@@ -73,12 +77,12 @@
 // for desktop
 @media (min-width: 960px) {
 
-	#admin {
-		padding-top: 90px;
+	#adminresult {
+		padding-top: 100px;
 	}
 
 	#content {
-		padding-top: 90px;
+		padding-top: 130px;
 	}
 
 	#home {
@@ -106,10 +110,6 @@
 
 .center {
 	text-align: center;
-}
-
-.description {
-	margin: 30px 0 10px;
 }
 
 .resultdata {
@@ -588,7 +588,7 @@
 
 /*--------------ADMIN ONLY--------------*/
 
-#admin {    
+.admin {    
 	background-color: $warm-grey-10;
 
 	#header {
@@ -620,29 +620,26 @@
 		padding: 30px;
 	}
 
-	.tagcontainer {
-		padding-top: 20px;
-		width:100%;
-	}
-
 	.card {
 		li {
 			display: block;
 		}
 	}
 
+	.tagcontainer {
+		padding-top: 20px;
+		width:100%;
+	}
+
+	.bleed {
+		background-color: $white;
+	}
+
+	.right {
+		text-align: right;
+	}
+
 }    /*END ADMIN ONLY*/
-
-.savebar {
-	height: 60px;
-	background-color: $white;
-	margin-top: 60px;
-}
-
-.leftmargin {
-	float:right;
-	margin-right: 50px;
-}
 
 .segmented {
 	display: flex;
@@ -705,10 +702,6 @@
 
 	.segmented {
 		margin-top: 0px;
-	}
-
-	.savebar {
-		margin-top: -20px;
 	}
 
 	.tagcontainer {
