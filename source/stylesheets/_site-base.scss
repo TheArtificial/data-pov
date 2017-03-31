@@ -44,14 +44,6 @@
 
 /*--------------SECTIONS--------------*/
 
-#adminresult {
-	padding-top: 0px;
-}
-
-#admindetail {
-	padding-top: 70px;
-}
-
 #content {
 	background-color: rgba($warm-grey-10, 0.35);
 	padding-top: 90px;
@@ -62,12 +54,12 @@
 	background-color: $darkest-grape;
 }
 
+#admin {
+	padding-top: 70px;
+}
+
 // for desktop
 @media (min-width: 960px) {
-
-	#adminresult {
-		padding-top: 100px;
-	}
 
 	#content {
 		padding-top: 130px;
@@ -78,6 +70,8 @@
 	}
 }
 
+
+
 /*--------------GENERAL ELEMENTS--------------*/
 
 .card {
@@ -86,11 +80,6 @@
 	border-radius: 10px;
 	background-color: $white;
 	padding: 20px;
-
-	.btn {
-		margin: 20px auto;
-		width: 80%;
-	}
 }
 
 .card:hover {
@@ -137,17 +126,6 @@
 	 	background-color: $warm-grey-40
 	}
 
-	.btn {
-		margin: 10px 0px 0px 0px;
-	}
-
-	// for desktop
-	@media (min-width: 960px) {
-
-		.btn {
-			margin: 40px 5px 20px 5px;
-		}
-	}
 }    /*END HOME ONLY*/
 
 /*--------------HOME POPUP--------------*/
@@ -160,6 +138,7 @@
 	width: 100%;
 	background-color: rgba(62, 7, 75, 0.5);
 	opacity: 0;
+	overflow: scroll;
 	visibility: hidden;
 	-webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
 	-moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
@@ -177,28 +156,8 @@
 .cd-popup-container {
 	position: relative;
 	color: $warm-grey-80;
-	height: 75vh;
-/*	width: 80%;
-	height:70%;*/
-	overflow: auto;
-	margin: 6em auto;
-	padding: 30px 20px 30px 10px;
+	overflow: scroll;
 	background: $white;
-	border-radius: 10px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-	-webkit-transform: translateY(-40px);
-	-moz-transform: translateY(-40px);
-	-ms-transform: translateY(-40px);
-	-o-transform: translateY(-40px);
-	transform: translateY(-40px);
-	/* Force Hardware Acceleration in WebKit */
-	-webkit-backface-visibility: hidden;
-	-webkit-transition-property: -webkit-transform;
-	-moz-transition-property: -moz-transform;
-	transition-property: transform;
-	-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	transition-duration: 0.3s;
 }
 
 .is-visible .cd-popup-container {
@@ -215,13 +174,26 @@
 }
 
 // for desktop
-@media (min-width: 960px) {
+@media (min-width: 780px) {
 
 	.cd-popup-container {
 		padding:30px 60px 30px 60px;
 		margin: 8em auto;
-		overflow: auto;
-		height: auto;
+		border-radius: 10px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		-webkit-transform: translateY(-40px);
+		-moz-transform: translateY(-40px);
+		-ms-transform: translateY(-40px);
+		-o-transform: translateY(-40px);
+		transform: translateY(-40px);
+		/* Force Hardware Acceleration in WebKit */
+		-webkit-backface-visibility: hidden;
+		-webkit-transition-property: -webkit-transform;
+		-moz-transition-property: -moz-transform;
+		transition-property: transform;
+		-webkit-transition-duration: 0.3s;
+		-moz-transition-duration: 0.3s;
+		transition-duration: 0.3s;
 	}
 
 	.question {
@@ -231,10 +203,11 @@
 }
 
 
+
 /*--------------RESULT--------------*/
 
 .tagcontainer {
-	margin: 5px 0 60px 0;
+	margin: 5px 0 10px 0;
 }
 
 .viztop {
@@ -257,7 +230,7 @@
 	color: $dark-grape;
 	font-weight: 500;
 	padding: 10px 30px 10px 30px;
-	margin: 40px auto;
+	margin: 20px auto;
 	border-radius: 50px;
 	display: inline-block;
 	width: 70%;
@@ -268,6 +241,11 @@
 .btn:hover {
 	background-color: $darkest-grape;
 	color: $white;
+}
+
+.btn.half {
+	width: 40%;
+	margin: 5px;
 }
 
 .tag {
@@ -342,6 +320,17 @@
 	padding-top: 0;
 }
 
+
+// for desktop
+@media (min-device-width: 768px) {
+	.btn {
+		padding:10px 20px 10px 20px;
+	}
+
+	.tagcontainer {
+		margin: 5px 0 60px 0;
+	}
+}
 /*--------------RESULTS - HAMBURGER MENU--------------*/
 
 @import "compass/css3";
@@ -524,12 +513,6 @@
 		width: 20px;
 	}
 
-	.btn {
-		padding: 10px 30px 10px 30px;
-		width: 35%;
-		margin: 20px auto;
-	}
-
 	.viztop {
 		padding-top: 70px;
 	}
@@ -564,7 +547,7 @@
 
 /*--------------ADMIN ONLY--------------*/
 
-.admin {    
+#admin {    
 	background-color: $warm-grey-10;
 
 	#header {
@@ -603,7 +586,6 @@
 	}
 
 	.tagcontainer {
-		padding-top: 20px;
 		margin-bottom: 10px;
 		width:100%;
 	}
@@ -618,12 +600,16 @@
 
 }    /*END ADMIN ONLY*/
 
+.admindetail {
+	padding: 50px 0 10px;
+}
+
 .segmented {
 	display: flex;
 	flex-flow: row wrap;
 	box-sizing: border-box;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 10px;
 }
 
 .segmented label {
@@ -674,6 +660,7 @@
 	color: $white;
 }
 
+
 @media only screen and (min-device-width: 320px) {
 // on mobile, everything scales to a single scrolling column
 
@@ -681,6 +668,7 @@
 		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
 			width: 50%;
 		}
+
 	}
 }
 
@@ -688,16 +676,22 @@
 // for desktop
 @media (min-width: 960px) {
 
-	.segmented {
-		margin-top: 0px;
+	#admin {   
+		.tagcontainer {
+			margin-bottom: 40px;
+		}
 	}
 
-	.tagcontainer {
-		margin-bottom: 40px;
+	.segmented {
+		margin-top: 30px;
 	}
 
 	.leftmargin {
 		margin-right: 0px;
+	}
+
+	.admindetail {
+	padding: 50px 0 60px;
 	}
 
 }
