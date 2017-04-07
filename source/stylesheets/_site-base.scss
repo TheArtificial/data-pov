@@ -157,6 +157,7 @@
 
 
 /*--------------HOME POPUP--------------*/
+
 .portBox-overlay {  
 	height: 100%;
 	width: 100%;
@@ -354,6 +355,16 @@
 			padding: 20px;
 		}
 
+		p {
+			display: inline-block;
+			font-size: 1.2em;
+			margin-bottom: 0;
+		}
+
+		h4 {
+			font-size: 1.2em;
+		}
+
 		.otherfunctions {
 			margin-left: 20px
 		}
@@ -376,7 +387,7 @@
 		} 
 
 		.tagcontainer {
-			margin: 0;
+			margin: 0 0 30px 0;
 		}
 
 		.tag {
@@ -411,27 +422,30 @@
 		}
 
 		.checkbox + label {
-			background-color: #271035;
-			padding: 9px;
+			background-color: $white;
+			opacity: .5;
+			padding: 12px;
 			border-radius: 3px;
 			display: inline-block;
 			position: relative;
 			margin-right: 10px;
+			margin-bottom: -4px;
 		}
 
 		.checkbox + label:active, .checkbox:checked + label:active {
 		}
 
 		.checkbox:checked + label {
-			background-color: $white;
+			opacity: 1;
 		}
 
 		.checkbox:checked + label:after {
 			content: '\2713';
-			font-size: 16px;
+			font-size: 22px;
 			position: absolute;
 			left: 0px;
-			color: $dark-grape;
+			top: -3px;
+			color: $darkest-grape;
 		}
  	 } 	 /*end menu only*/
 
