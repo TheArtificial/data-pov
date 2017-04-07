@@ -116,7 +116,7 @@ $(".burger").click(function() {
 })
 
 $(window).resize(function() {
-    if ($(window).width() > 320) {
+    if ($(window).width() > 768) { // match CSS breakpoint
         $('ul.menu').removeAttr('style');
     }
 })
