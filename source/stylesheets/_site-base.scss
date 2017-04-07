@@ -160,9 +160,9 @@
 .portBox-overlay {  
 	height: 100%;
 	width: 100%;
-	background: #000000;
-	opacity: 0.6;
-	filter: alpha(opacity=60);
+	background: $darkest-grape;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -171,7 +171,6 @@
 }
 
 .portBox {
-	max-width:1280px;
 	position: absolute;
 	display:none;
 	background: #ffffff;
@@ -181,13 +180,19 @@
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 10px;
-	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
-	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
-	-box-shadow: 0 0 10px rgba(0,0,0,.4);
 	min-width:200px;
 	-webkit-box-sizing: border-box; 
 	-moz-box-sizing: border-box; 
 	box-sizing: border-box;
+}
+
+.categorydetails {
+	text-align: center;
+}
+
+.iconlrg {
+	width: 60px;
+	padding-bottom: 14px;
 }
 
 
@@ -216,7 +221,7 @@
 	border: solid 2px $dark-grape;
 	color: $dark-grape;
 	font-weight: 500;
-	padding: 10px 30px 10px 30px;
+	padding: 10px 10px 10px 10px;
 	margin: 20px auto;
 	border-radius: 50px;
 	display: inline-block;
@@ -231,8 +236,7 @@
 }
 
 .btn.half {
-	width: 40%;
-	margin: 5px;
+	width: 35%;
 }
 
 .tag {
@@ -316,6 +320,11 @@
 
 	.tagcontainer {
 		margin: 5px 0 60px 0;
+	}
+
+	.btn.half {
+	width: 40%;
+	margin: 5px;
 	}
 }
 /*--------------RESULTS - HAMBURGER MENU--------------*/
