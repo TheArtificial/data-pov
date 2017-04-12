@@ -558,7 +558,16 @@
 
 /*--------------ADMIN ONLY--------------*/
 
-#admin {    
+#admin {   
+
+	a {
+		color: inherit;
+	} 
+
+	a:active {
+		color: $warm-grey-80;
+	}
+
 	.card {
 		background-color: $white;
 		border-radius: 10px;
@@ -571,11 +580,6 @@
 		}
 	}
 
-	.tagcontainer {
-		margin-bottom: 10px;
-		width:100%;
-	}
-
 	.bleed {
 		background-color: $white;
 	}
@@ -584,66 +588,14 @@
 		text-align: right;
 	}
 
+	.tag {
+		color: $white;
+	}
+	
 }    /*END ADMIN ONLY*/
 
-.admindetail {
+.adminchartpage {
 	padding: 50px 0 10px;
-}
-
-.segmented {
-	display: flex;
-	flex-flow: row wrap;
-	box-sizing: border-box;
-	text-align: center;
-	margin-top: 10px;
-}
-
-.segmented label a{
-	display: block;
-	flex: 1;
-	box-sizing: border-box;
-	border: 1px solid $darkest-grape;
-	border-right: none;
-	color: $darkest-grape;
-	margin: 0;
-	padding: 10px 30px 10px 30px;
-	user-select: none;
-	-webkit-user-select: none;
-}
-
-.segmented label a.checked {
-	background: $darkest-grape;
-	color: $white;
-}
-
-.segmented.inverted label a{
-	border-color: $white;
-	color: $white;
-	background: none;
-}
-
-.segmented.inverted label a.checked {
-	background: $white;
-	color: inherit;
-}
-
-.segmented label a:first-child {
-	border-radius: 50px 0 0 50px;
-}
-
-.segmented label a:last-child {
-	border-radius: 0 50px 50px 0;
-}
-
-.segmented input[type="radio"] {
-	opacity: 0;
-	-webkit-appearance: none;
-	margin: 0;
-	position: absolute;
-}
-
-.segmented .checked a {
-	color: $white;
 }
 
 .field {
@@ -653,10 +605,55 @@
 	border-radius: 10px;
 }
 
-.name {
+.vizname {
 	font-weight: 700;
 	font-size: 2.25em;
 	line-height: 1.25em;
+}
+
+
+.segmented {
+	display: flex;
+	flex-flow: row wrap;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 10px;
+	width: 100%;
+}
+
+button {
+	border: 1px solid $darkest-grape;
+	background-color: transparent;
+	box-sizing: border-box;
+	width: 50%;
+}
+
+button a{
+	display: block;
+	border-right: none;
+	margin: 0;
+	color: $darkest-grape;
+	padding: 10px 30px 10px 30px;
+}
+
+.segmented button.checked {
+	color: $white;
+	background-color: $darkest-grape;
+}
+
+.segmented button:first-child {
+	border-radius: 50px 0 0 50px;
+}
+
+.segmented button:last-child {
+	border-radius: 0 50px 50px 0;
+}
+
+.segmented input[type="radio"] {
+	opacity: 0;
+	-webkit-appearance: none;
+	margin: 0;
+	position: absolute;
 }
 
 

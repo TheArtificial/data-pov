@@ -8,16 +8,16 @@ layout: nomenu_layout
 		<div class="col-12">
 			<div class="padded">
 				<div class="segmented">
-					<label>
+					<button>
 						<input name="segmented" type="radio"><a href="admin-function.html">Sort by functions</a> 
-					</label>
-					<label class="checked">
+					</button>
+					<button class="checked">
 						<input checked name="segmented" type="radio"><a href="admin-charttype.html">Sort by chart type</a>
-					</label>
+					</button>
 				</div>
 			</div>
 		</div>
-		<div class="tagcontainer">
+		<div class="padded">
 			<div class="col-12">
 				<div class="card">
 					<h2>Bar Charts (15 variations)</h2>
@@ -127,7 +127,7 @@ layout: nomenu_layout
 
 	<script type="text/javascript">
 	$(document).ready(function(){
-	   $(".segmented label input[type=radio]").each(function(){
+	   $(".segmented button input[type=radio]").each(function(){
 	       $(this).on("change", function(){
 	           if($(this).is(":checked")){
 	              $(this).parent().siblings().each(function(){
