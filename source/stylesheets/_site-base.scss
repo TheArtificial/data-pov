@@ -598,7 +598,7 @@
 	margin-top: 10px;
 }
 
-.segmented label {
+.segmented label a{
 	display: block;
 	flex: 1;
 	box-sizing: border-box;
@@ -611,27 +611,27 @@
 	-webkit-user-select: none;
 }
 
-.segmented label.checked {
+.segmented label a.checked {
 	background: $darkest-grape;
 	color: $white;
 }
 
-.segmented.inverted label {
+.segmented.inverted label a{
 	border-color: $white;
 	color: $white;
 	background: none;
 }
 
-.segmented.inverted label.checked {
+.segmented.inverted label a.checked {
 	background: $white;
 	color: inherit;
 }
 
-.segmented label:first-child {
+.segmented label a:first-child {
 	border-radius: 50px 0 0 50px;
 }
 
-.segmented label:last-child {
+.segmented label a:last-child {
 	border-radius: 0 50px 50px 0;
 }
 
@@ -646,6 +646,19 @@
 	color: $white;
 }
 
+.field {
+	background-color: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.name {
+	font-weight: 700;
+	font-size: 2.25em;
+	line-height: 1.25em;
+}
+
 
 @media only screen and (min-device-width: 320px) {
 // on mobile, everything scales to a single scrolling column
@@ -654,7 +667,6 @@
 		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
 			width: 50%;
 		}
-
 	}
 }
 
@@ -677,7 +689,7 @@
 	}
 
 	.admindetail {
-	padding: 50px 0 60px;
+		padding: 50px 0 60px;
 	}
 
 }
